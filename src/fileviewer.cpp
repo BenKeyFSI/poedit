@@ -43,6 +43,7 @@
 #include "customcontrols.h"
 #include "hidpi.h"
 #include "utility.h"
+#include "myStc.h"
 
 namespace
 {
@@ -91,7 +92,7 @@ FileViewer::FileViewer(wxWindow*)
     m_openInEditor = new wxButton(panel, wxID_ANY, MSW_OR_OTHER(_("Open in editor"), _("Open in Editor")));
     barsizer->Add(m_openInEditor, wxSizerFlags().Center().Border(wxLEFT, PX(10)));
 
-    m_text = new wxStyledTextCtrl(panel, wxID_ANY,
+    m_text = new myWxStyledTextCtrl(panel, wxID_ANY,
                                   wxDefaultPosition, wxDefaultSize,
                                   wxBORDER_THEME);
     SetupTextCtrl();
@@ -139,7 +140,7 @@ FileViewer::~FileViewer()
 
 void FileViewer::SetupTextCtrl()
 {
-    wxStyledTextCtrl& t = *m_text;
+    myWxStyledTextCtrl& t = *m_text;
 
     wxFont font = wxSystemSettings::GetFont(wxSYS_DEFAULT_GUI_FONT);
 
@@ -225,6 +226,7 @@ void FileViewer::SetupTextCtrl()
     t.StyleSetSpec(wxSTC_PAS_COMMENT, COMMENT);
     t.StyleSetSpec(wxSTC_PAS_COMMENT2, COMMENT);
     t.StyleSetSpec(wxSTC_PAS_COMMENTLINE, COMMENT);
+    t.SetUseTabToNavigate(true);
 }
 
 
@@ -378,6 +380,7 @@ void FileViewer::SelectReference(const wxString& ref)
     int lineHeight = m_text->TextHeight((int)linenum);
     int linesInWnd = m_text->GetSize().y / lineHeight;
     m_text->ScrollToLine(wxMax(0, (int)linenum - linesInWnd/2));
+    m_text->GotoLine((int)linenum - 1);
 }
 
 void FileViewer::ShowError(const wxString& msg)

@@ -34,7 +34,7 @@ class WXDLLIMPEXP_FWD_CORE wxButton;
 class WXDLLIMPEXP_FWD_CORE wxChoice;
 class WXDLLIMPEXP_FWD_CORE wxStaticText;
 class WXDLLIMPEXP_FWD_CORE wxFileName;
-class WXDLLIMPEXP_FWD_STC wxStyledTextCtrl;
+class myWxStyledTextCtrl;
 
 
 /** This class implements frame that shows part of file
@@ -67,7 +67,7 @@ private:
 
     wxChoice *m_file;
     wxButton *m_openInEditor;
-    wxStyledTextCtrl *m_text;
+    myWxStyledTextCtrl *m_text;
     wxStaticText *m_error;
 
     void OnChoice(wxCommandEvent &event);
