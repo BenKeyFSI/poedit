@@ -43,12 +43,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>..\wx\lib\vc_lib\</OutDir>
     <IntDir>vc_mswud\xml\</IntDir>
-    <TargetName>wxbase29ud_xml</TargetName>
+    <TargetName>wxbase30ud_xml</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>..\wx\lib\vc_lib\</OutDir>
     <IntDir>vc_mswu\xml\</IntDir>
-    <TargetName>wxbase29u_xml</TargetName>
+    <TargetName>wxbase30u_xml</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
@@ -69,7 +69,7 @@
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>vc_mswud\wxprec_xmllib.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>vc_mswud\xml\</ObjectFileName>
-      <ProgramDataBaseFileName>..\wx\lib\vc_lib\wxbase29ud_xml.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>..\wx\lib\vc_lib\wxbase30ud_xml.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -81,7 +81,7 @@
       <AdditionalIncludeDirectories>config;..\wx\include;..\wx\src\tiff\libtiff;..\wx\src\jpeg;..\wx\src\png;..\zlib;..\wx\src\regex;..\expat\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Lib>
-      <OutputFile>..\wx\lib\vc_lib\wxbase29ud_xml.lib</OutputFile>
+      <OutputFile>..\wx\lib\vc_lib\wxbase30ud_xml.lib</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
     <Bscmake>
@@ -106,7 +106,7 @@
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>vc_mswu\wxprec_xmllib.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>vc_mswu\xml\</ObjectFileName>
-      <ProgramDataBaseFileName>..\wx\lib\vc_lib\wxbase29u_xml.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>..\wx\lib\vc_lib\wxbase30u_xml.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -118,7 +118,7 @@
       <AdditionalIncludeDirectories>config;..\wx\include;..\wx\src\tiff\libtiff;..\wx\src\jpeg;..\wx\src\png;..\zlib;..\wx\src\regex;..\expat\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Lib>
-      <OutputFile>..\wx\lib\vc_lib\wxbase29u_xml.lib</OutputFile>
+      <OutputFile>..\wx\lib\vc_lib\wxbase30u_xml.lib</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
     <Bscmake>

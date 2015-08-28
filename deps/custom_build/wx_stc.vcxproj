@@ -43,12 +43,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>..\wx\lib\vc_lib\</OutDir>
     <IntDir>vc_mswud\stc\</IntDir>
-    <TargetName>wxmsw29ud_stc</TargetName>
+    <TargetName>wxmsw30ud_stc</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>..\wx\lib\vc_lib\</OutDir>
     <IntDir>vc_mswu\stc\</IntDir>
-    <TargetName>wxmsw29u_stc</TargetName>
+    <TargetName>wxmsw30u_stc</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
@@ -69,7 +69,7 @@
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>vc_mswud\wxprec_stclib.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>vc_mswud\stc\</ObjectFileName>
-      <ProgramDataBaseFileName>..\wx\lib\vc_lib\wxmsw29ud_stc.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>..\wx\lib\vc_lib\wxmsw30ud_stc.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -81,7 +81,7 @@
       <AdditionalIncludeDirectories>config;..\wx\include;..\wx\src\tiff\libtiff;..\wx\src\jpeg;..\wx\src\png;..\zlib;..\wx\src\regex;..\expat\lib;..\wx\src\stc\scintilla\include;..\wx\src\stc\scintilla\lexlib;..\wx\src\stc\scintilla\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Lib>
-      <OutputFile>..\wx\lib\vc_lib\wxmsw29ud_stc.lib</OutputFile>
+      <OutputFile>..\wx\lib\vc_lib\wxmsw30ud_stc.lib</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
     <Bscmake>
@@ -106,7 +106,7 @@
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>vc_mswu\wxprec_stclib.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>vc_mswu\stc\</ObjectFileName>
-      <ProgramDataBaseFileName>..\wx\lib\vc_lib\wxmsw29u_stc.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>..\wx\lib\vc_lib\wxmsw30u_stc.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -118,7 +118,7 @@
       <AdditionalIncludeDirectories>config;..\wx\include;..\wx\src\tiff\libtiff;..\wx\src\jpeg;..\wx\src\png;..\zlib;..\wx\src\regex;..\expat\lib;..\wx\src\stc\scintilla\include;..\wx\src\stc\scintilla\lexlib;..\wx\src\stc\scintilla\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Lib>
-      <OutputFile>..\wx\lib\vc_lib\wxmsw29u_stc.lib</OutputFile>
+      <OutputFile>..\wx\lib\vc_lib\wxmsw30u_stc.lib</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
     <Bscmake>
