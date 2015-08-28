@@ -4,7 +4,7 @@
 	ignore = untracked
 [submodule "deps/winsparkle"]
 	path = deps/winsparkle
-	url = git://github.com/vslavik/winsparkle.git
+	url = git://github.com/BenKeyFSI/winsparkle.git
 	ignore = untracked
 [submodule "deps/wx"]
 	path = deps/wx
