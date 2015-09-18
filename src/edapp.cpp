@@ -1,4 +1,4 @@
-﻿/*
+/*
  *  This file is part of Poedit (http://poedit.net)
  *
  *  Copyright (C) 1999-2015 Vaclav Slavik
@@ -1044,7 +1044,7 @@ void PoeditApp::OnAbout(wxCommandEvent&)
 #ifndef __WXOSX__
     about.SetName("Poedit");
     about.SetVersion(wxGetApp().GetAppVersion());
-    about.SetDescription(_("Poedit is an easy to use translations editor."));
+    about.SetDescription(_("Poedit is an easy to use translations editor.\nAccessibility enhancements by Freedom Scientific."));
 #endif
     about.SetCopyright(L"Copyright \u00a9 1999-2015 Václav Slavík");
 #ifdef __WXGTK__ // other ports would show non-native about dlg
