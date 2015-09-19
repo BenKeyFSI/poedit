@@ -62,6 +62,8 @@ extern void
 
 /* These functions set some parameters for use by 'output_format_po.print'.  */
 extern void
+       message_page_combine_refs(void);
+extern void
        message_page_width_ignore (void);
 extern void
        message_print_style_indent (void);

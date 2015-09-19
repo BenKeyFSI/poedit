@@ -126,6 +126,7 @@ static const struct option long_options[] =
   { "style", required_argument, NULL, CHAR_MAX + 10 },
   { "version", no_argument, NULL, 'V' },
   { "width", required_argument, NULL, 'w' },
+  { "combine-refs", no_argument, NULL, CHAR_MAX + 12 },
   { NULL, 0, NULL, 0 }
 };
 
@@ -407,6 +408,10 @@ error while reading \"%s\""), optarg);
         message_print_style_filepos (filepos_comment_none);
         break;
 
+      case CHAR_MAX + 12: /* --combine-refs */
+        message_page_combine_refs();
+        break;
+
       default:
         usage (EXIT_FAILURE);
         break;
@@ -625,6 +630,9 @@ Output details:\n"));
       --sort-output           generate sorted output\n"));
       printf (_("\
       --sort-by-file          sort output by file location\n"));
+      printf (_("\
+      --combine-refs          Combine multiple file references on a single line.\n\
+                              This restores the old behavior.\n"));
       printf ("\n");
       printf (_("\
 Informative output:\n"));

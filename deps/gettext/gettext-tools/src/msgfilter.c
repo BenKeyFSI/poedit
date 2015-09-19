@@ -113,6 +113,7 @@ static const struct option long_options[] =
   { "style", required_argument, NULL, CHAR_MAX + 7 },
   { "version", no_argument, NULL, 'V' },
   { "width", required_argument, NULL, 'w', },
+  { "combine-refs", no_argument, NULL, CHAR_MAX + 10 },
   { NULL, 0, NULL, 0 }
 };
 
@@ -274,6 +275,10 @@ main (int argc, char **argv)
 
       case CHAR_MAX + 9: /* --newline */
         newline = true;
+        break;
+
+      case CHAR_MAX + 10: /* --combine-refs */
+        message_page_combine_refs();
         break;
 
       default:
@@ -504,6 +509,9 @@ Output details:\n"));
   -s, --sort-output           generate sorted output\n"));
       printf (_("\
   -F, --sort-by-file          sort output by file location\n"));
+      printf (_("\
+      --combine-refs          Combine multiple file references on a single line.\n\
+                              This restores the old behavior.\n"));
       printf ("\n");
       printf (_("\
 Informative output:\n"));

@@ -254,6 +254,7 @@ static const struct option long_options[] =
   { "trigraphs", no_argument, NULL, 'T' },
   { "version", no_argument, NULL, 'V' },
   { "width", required_argument, NULL, 'w', },
+  { "combine-refs", no_argument, NULL, CHAR_MAX + 19 },
   { NULL, 0, NULL, 0 }
 };
 
@@ -631,6 +632,10 @@ main (int argc, char *argv[])
           sentence_end_required_spaces = 2;
         else
           error (EXIT_FAILURE, 0, _("sentence end type '%s' unknown"), optarg);
+        break;
+
+      case CHAR_MAX + 19: /* --combine-refs */
+        message_page_combine_refs();
         break;
 
       default:
@@ -1076,6 +1081,9 @@ Output details:\n"));
       printf (_("\
   -M[STRING], --msgstr-suffix[=STRING]  use STRING or \"\" as suffix for msgstr\n\
                                 values\n"));
+      printf (_("\
+      --combine-refs          Combine multiple file references on a single line.\n\
+                              This restores the old behavior.\n"));
       printf ("\n");
       printf (_("\
 Informative output:\n"));

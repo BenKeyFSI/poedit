@@ -304,6 +304,11 @@ message_print_comment_dot (const message_ty *mp, ostream_t stream)
     }
 }
 
+/* This variable controls whether or not an attempt is made to combine multiple file references on
+one line. The default is to not do so. The old behavior of combining multiple file references on one
+line can be restored by calling the message_page_combine_refs function, which is user accessible via
+the --combine-refs command line argument. */
+static bool combine_refs = false;
 
 /* Output mp->filepos as a set of comment lines.  */
 
@@ -401,7 +406,15 @@ message_print_comment_filepos (const message_ty *mp, ostream_t stream,
               else
                 sprintf (buffer, ":%ld", (long) pp->line_number);
               len = strlen (cp) + strlen (buffer) + 1;
-              if (column > 2 && column + len > page_width)
+              if (combine_refs)
+                {
+                  if (column > 2 && column + len > page_width)
+                    {
+                      ostream_write_str (stream, "\n#:");
+                      column = 2;
+                    }
+                }
+              else if (j > 0)
                 {
                   ostream_write_str (stream, "\n#:");
                   column = 2;
@@ -510,7 +523,6 @@ message_print_comment_flags (const message_ty *mp, ostream_t stream, bool debug)
 
 /* ========= Some parameters for use by 'msgdomain_list_print_po'. ========= */
 
-
 /* This variable controls the extent to which the page width applies.
    True means it applies to message strings and file reference lines.
    False means it applies to file reference lines only.  */
@@ -553,6 +565,11 @@ message_print_style_filepos (enum filepos_comment_type type)
   filepos_comment_type = type;
 }
 
+void
+message_page_combine_refs(void)
+{
+  combine_refs = true;
+}
 
 /* --add-location argument handling.  Return an error indicator.  */
 bool
@@ -877,18 +894,6 @@ wrap (const message_ty *mp, ostream_t stream,
               *op++ = UC_BREAK_PROHIBITED;
               *ap++ = attr | ATTR_ESCAPE_SEQUENCE;
               *ap++ = attr | ATTR_ESCAPE_SEQUENCE;
-              /* We warn about any use of escape sequences beside
-                 '\n' and '\t'.  */
-              if (c != 'n' && c != 't')
-                {
-                  char *error_message =
-                    xasprintf (_("\
-internationalized messages should not contain the '\\%c' escape sequence"),
-                               c);
-                  po_xerror (PO_SEVERITY_WARNING, mp, NULL, 0, 0, false,
-                             error_message);
-                  free (error_message);
-                }
             }
           else if (escape && !c_isprint ((unsigned char) c))
             {

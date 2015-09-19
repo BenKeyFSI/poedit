@@ -92,6 +92,7 @@ static const struct option long_options[] =
   { "width", required_argument, NULL, 'w', },
   { "more-than", required_argument, NULL, '>', },
   { "less-than", required_argument, NULL, '<', },
+  { "combine-refs", no_argument, NULL, CHAR_MAX + 8 },
   { NULL, 0, NULL, 0 }
 };
 
@@ -273,6 +274,10 @@ main (int argc, char *argv[])
         message_print_style_filepos (filepos_comment_none);
         break;
 
+      case CHAR_MAX + 8: /* --combine-refs */
+        message_page_combine_refs();
+        break;
+
       default:
         usage (EXIT_FAILURE);
         /* NOTREACHED */
@@ -452,6 +457,9 @@ Output details:\n"));
   -F, --sort-by-file          sort output by file location\n"));
       printf (_("\
       --omit-header           don't write header with 'msgid \"\"' entry\n"));
+      printf (_("\
+      --combine-refs          Combine multiple file references on a single line.\n\
+                              This restores the old behavior.\n"));
       printf ("\n");
       printf (_("\
 Informative output:\n"));

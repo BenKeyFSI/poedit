@@ -83,6 +83,7 @@ static const struct option long_options[] =
   { "to-code", required_argument, NULL, 't' },
   { "version", no_argument, NULL, 'V' },
   { "width", required_argument, NULL, 'w', },
+  { "combine-refs", no_argument, NULL, CHAR_MAX + 7 },
   { NULL, 0, NULL, 0 }
 };
 
@@ -230,6 +231,10 @@ main (int argc, char **argv)
 
       case CHAR_MAX + 6: /* --no-location */
         message_print_style_filepos (filepos_comment_none);
+        break;
+
+      case CHAR_MAX + 7: /* --combine-refs */
+        message_page_combine_refs();
         break;
 
       default:
@@ -382,6 +387,9 @@ Output details:\n"));
   -s, --sort-output           generate sorted output\n"));
       printf (_("\
   -F, --sort-by-file          sort output by file location\n"));
+      printf (_("\
+      --combine-refs          Combine multiple file references on a single line.\n\
+                              This restores the old behavior.\n"));
       printf ("\n");
       printf (_("\
 Informative output:\n"));

@@ -128,6 +128,7 @@ static const struct option long_options[] =
   { "style", required_argument, NULL, CHAR_MAX + 6 },
   { "version", no_argument, NULL, 'V' },
   { "width", required_argument, NULL, 'w' },
+  { "combine-refs", no_argument, NULL, CHAR_MAX + 7 },
   { NULL, 0, NULL, 0 }
 };
 
@@ -254,6 +255,10 @@ main (int argc, char **argv)
 
       case CHAR_MAX + 6: /* --style */
         handle_style_option (optarg);
+        break;
+
+      case CHAR_MAX + 7: /* --combine-refs */
+        message_page_combine_refs();
         break;
 
       default:
@@ -417,6 +422,9 @@ Output details:\n"));
       printf (_("\
       --no-wrap               do not break long message lines, longer than\n\
                               the output page width, into several lines\n"));
+      printf (_("\
+      --combine-refs          Combine multiple file references on a single line.\n\
+                              This restores the old behavior.\n"));
       printf ("\n");
       printf (_("\
 Informative output:\n"));

@@ -445,6 +445,39 @@ po_parse_comment_special (const char *s,
     }
 }
 
+/* Helper function that is used by po_parse_comment_filepos to find the end of the file name.
+Allows for spaces in file names. */
+static const char* po_parse_comment_find_end_of_file_name(const char* s)
+{
+  const char* ret = s;
+  /* At this point, s points to the beginning of the file name. Advance s to the end of
+  the file name. Allow file names that contain spaces. */
+  do
+  {
+    ++ret;
+  } while (!(ret[0] == '\0' || ret[0] == ':' || ret[0] == '\t' || ret[0] == '\n'));
+  /* Note that if the file was generated on a Microsoft Windows system and the file reference
+  is a full path and file name, the : may be part of the file name. Test for that scenario here. */
+  if (ret[0] == ':' && (ret[1] == '\\' || ret[1] == '/'))
+  {
+    do
+    {
+      ret++;
+    } while (!(ret[0] == '\0' || ret[0] == ':' || ret[0] == '\t' || ret[0] == '\n'));
+  }
+  /* It is possible that we have moved beyond the end of the file name, such as when the
+  line is formatted as follows.
+    #: File Name : Line
+  Make certain that s points just beyond the end of the file name. */
+  if (ret > s && ret[0] == ':' && ret[-1] == ' ')
+  {
+    do
+    {
+      --ret;
+    } while (ret > s && *ret == ':' && ret[-1] == ' ');
+  }
+  return ret;
+}
 
 /* Parse a GNU style file comment.
    Syntax: an arbitrary number of
@@ -464,10 +497,7 @@ po_parse_comment_filepos (const char *s)
       if (*s != '\0')
         {
           const char *string_start = s;
-
-          do
-            s++;
-          while (!(*s == '\0' || *s == ' ' || *s == '\t' || *s == '\n'));
+          s = po_parse_comment_find_end_of_file_name(s);
 
           /* See if there is a COLON and NUMBER after the STRING, separated
              through optional spaces.  */
