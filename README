@@ -4,6 +4,7 @@
                                  ------------
 
               a cross-platform gettext catalogs editing tool
+          With accessibility enhancements by Freedom Scientific.
 
 
  About
@@ -79,9 +80,9 @@ After checkout, use the Poedit.sln solution.
  Installing from Git repository
 --------------------------------
 
-Get the sources from github (http://github.com/vslavik/poedit):
+Get the sources from github (http://github.com/BenKeyFSI/poedit):
 
-    git clone git://github.com/vslavik/poedit.git
+    git clone git://github.com/BenKeyFSI/poedit.git
 
 If you are on Windows or OSX, you probably want the dependencies too. They
 are at git://github.com/vslavik/poedit-deps.git, but as it's a git submodule,
