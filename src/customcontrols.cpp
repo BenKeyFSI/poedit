@@ -133,7 +133,7 @@ AutoWrappingText::AutoWrappingText(wxWindow *parent, const wxString& label)
     m_text.Replace("\n", " ");
 
     SetInitialSize(wxSize(10,10));
-    Bind(wxEVT_SIZE, &ExplanationLabel::OnSize, this);
+    Bind(wxEVT_SIZE, &AutoWrappingText::OnSize, this);
 }
 
 void AutoWrappingText::SetAlignment(int align)
@@ -195,6 +195,49 @@ SelectableAutoWrappingText::SelectableAutoWrappingText(wxWindow *parent, const w
         wxClipboard::Get()->SetData(new wxTextDataObject(m_text));
     }, idCopy);
 #endif
+}
+
+
+AutoWrappingTextCtrl::AutoWrappingTextCtrl(wxWindow* parent, wxWindowID id, const wxString& value) :
+    wxTextCtrl(parent, id, "", wxDefaultPosition, wxDefaultSize, wxST_NO_AUTORESIZE | wxTE_MULTILINE | wxTE_READONLY | wxTE_RICH2),
+    m_value(value),
+    m_wrapWidth(-1)
+{
+    m_value.Replace("\n", " ");
+    SetInitialSize(wxSize(10, 10));
+    Bind(wxEVT_SIZE, &AutoWrappingTextCtrl::OnSize, this);
+}
+
+void AutoWrappingTextCtrl::SetAlignment(int align)
+{
+    if (GetWindowStyleFlag() & align)
+        return;
+    SetWindowStyleFlag(wxST_NO_AUTORESIZE | align);
+}
+
+void AutoWrappingTextCtrl::SetAndWrapText(const wxString& value)
+{
+    wxWindowUpdateLocker lock(this);
+    m_value = value;
+    m_wrapWidth = GetSize().x;
+    SetValue(WrapTextAtWidth(value, m_wrapWidth, this));
+    InvalidateBestSize();
+    SetMinSize(wxDefaultSize);
+    SetMinSize(GetBestSize());
+}
+
+void AutoWrappingTextCtrl::OnSize(wxSizeEvent& e)
+{
+    e.Skip();
+    int w = wxMax(0, e.GetSize().x - PX(4));
+    if (w == m_wrapWidth)
+        return;
+    wxWindowUpdateLocker lock(this);
+    m_wrapWidth = w;
+    SetValue(WrapTextAtWidth(m_value, w, this));
+    InvalidateBestSize();
+    SetMinSize(wxDefaultSize);
+    SetMinSize(GetBestSize());
 }
 
 

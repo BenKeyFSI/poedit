@@ -72,6 +72,20 @@ public:
     SelectableAutoWrappingText(wxWindow *parent, const wxString& label);
 };
 
+// Read only text control that auto-wraps itself to fit surrounding control's width.
+class AutoWrappingTextCtrl : public wxTextCtrl
+{
+public:
+    AutoWrappingTextCtrl(wxWindow* parent, wxWindowID id, const wxString& value);
+    void SetAlignment(int align);
+    void SetAndWrapText(const wxString& value);
+
+protected:
+    void OnSize(wxSizeEvent& e);
+
+    wxString m_value;
+    int m_wrapWidth;
+};
 
 /** 
     Longer, often multiline, explanation label used to provide more information
