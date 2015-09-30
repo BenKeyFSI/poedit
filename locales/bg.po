@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poedit\n"
 "Report-Msgid-Bugs-To: help@poedit.net\n"
-"POT-Creation-Date: 2015-07-22 15:35+0200\n"
+"POT-Creation-Date: 2015-09-30 17:34-0500\n"
 "PO-Revision-Date: 2015-07-22 09:00-0400\n"
 "Last-Translator: vslavik <vaclav@slavik.io>\n"
 "Language-Team: Bulgarian\n"
@@ -277,8 +277,17 @@ msgstr "Относно %s"
 msgid "Version %s"
 msgstr "Версия %s"
 
-msgid "Poedit is an easy to use translations editor."
-msgstr "Poedit е лесен за ползване редактор на преводи."
+msgid ""
+"Poedit is an easy to use translations editor.\n"
+"\n"
+"With accessibility enhancements by Freedom Scientific."
+msgstr ""
+
+msgid "Václav Slavík"
+msgstr ""
+
+msgid "Ben Key"
+msgstr ""
 
 msgid "Catalogs Manager"
 msgstr "&Управление на каталози"
@@ -1568,6 +1577,30 @@ msgstr "С&ледващ незавършен"
 
 msgid "Ne&xt Unfinished"
 msgstr "С&ледващ незавършен"
+
+msgid "Go to translations &list"
+msgstr ""
+
+msgid "Go to Translations &List"
+msgstr ""
+
+msgid "Go to &source text"
+msgstr ""
+
+msgid "Go to &Source Text"
+msgstr ""
+
+msgid "Go to tr&anslation"
+msgstr ""
+
+msgid "Go to Tr&anslation"
+msgstr ""
+
+msgid "Go to notes for &translators"
+msgstr ""
+
+msgid "Go to Notes for &Translators"
+msgstr ""
 
 msgid "&Online help"
 msgstr "Он&лайн помощ"
