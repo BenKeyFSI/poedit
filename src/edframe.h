@@ -236,6 +236,10 @@ class PoeditFrame : public wxFrame
         void OnNextPage(wxCommandEvent&);
         void OnPrevUnfinished(wxCommandEvent&);
         void OnNextUnfinished(wxCommandEvent&);
+        void OnGoToTranslationsList(wxCommandEvent&);
+        void OnGoToSourceText(wxCommandEvent&);
+        void OnGoToTranslation(wxCommandEvent&);
+        void OnGoToNotesForTranslators(wxCommandEvent&);
 
         // Message handlers:
 public: // for PoeditApp

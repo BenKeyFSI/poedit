@@ -315,6 +315,10 @@ BEGIN_EVENT_TABLE(PoeditFrame, wxFrame)
    EVT_MENU           (XRCID("go_next_page"),       PoeditFrame::OnNextPage)
    EVT_MENU           (XRCID("go_prev_unfinished"), PoeditFrame::OnPrevUnfinished)
    EVT_MENU           (XRCID("go_next_unfinished"), PoeditFrame::OnNextUnfinished)
+   EVT_MENU           (XRCID("go_to_translations_list"), PoeditFrame::OnGoToTranslationsList)
+   EVT_MENU           (XRCID("go_to_source_text"),  PoeditFrame::OnGoToSourceText)
+   EVT_MENU           (XRCID("go_to_translation"),  PoeditFrame::OnGoToTranslation)
+   EVT_MENU           (XRCID("go_to_notes_for_translators"), PoeditFrame::OnGoToNotesForTranslators)
    EVT_MENU_RANGE     (ID_POPUP_REFS, ID_POPUP_REFS + 999, PoeditFrame::OnReference)
    EVT_COMMAND        (wxID_ANY, EVT_SUGGESTION_SELECTED, PoeditFrame::OnSuggestion)
    EVT_MENU           (XRCID("menu_auto_translate"), PoeditFrame::OnAutoTranslateAll)
@@ -336,6 +340,10 @@ BEGIN_EVENT_TABLE(PoeditFrame, wxFrame)
    EVT_UPDATE_UI(XRCID("go_next_page"),       PoeditFrame::OnSingleSelectionUpdate)
    EVT_UPDATE_UI(XRCID("go_prev_unfinished"), PoeditFrame::OnSingleSelectionUpdate)
    EVT_UPDATE_UI(XRCID("go_next_unfinished"), PoeditFrame::OnSingleSelectionUpdate)
+   EVT_UPDATE_UI(XRCID("go_to_translations_list"), PoeditFrame::OnSingleSelectionUpdate)
+   EVT_UPDATE_UI(XRCID("go_to_source_text"),  PoeditFrame::OnSingleSelectionUpdate)
+   EVT_UPDATE_UI(XRCID("go_to_translation"),  PoeditFrame::OnSingleSelectionUpdate)
+   EVT_UPDATE_UI(XRCID("go_to_notes_for_translators"), PoeditFrame::OnSingleSelectionUpdate)
 
    EVT_UPDATE_UI(XRCID("menu_fuzzy"),         PoeditFrame::OnSelectionUpdateEditable)
    EVT_UPDATE_UI(XRCID("menu_copy_from_src"), PoeditFrame::OnSelectionUpdateEditable)
@@ -927,7 +935,11 @@ void PoeditFrame::SetAccelerators()
         { wxACCEL_CTRL, WXK_NUMPAD_DOWN,        XRCID("go_next") },
 
         { wxACCEL_CTRL, WXK_RETURN,             XRCID("go_done_and_next") },
-        { wxACCEL_CTRL, WXK_NUMPAD_ENTER,       XRCID("go_done_and_next") }
+        { wxACCEL_CTRL, WXK_NUMPAD_ENTER,       XRCID("go_done_and_next") },
+        { wxACCEL_ALT, wxKeyCode('L'),          XRCID("go_to_translations_list") },
+        { wxACCEL_ALT, wxKeyCode('S'),          XRCID("go_to_source_text") },
+        { wxACCEL_ALT, wxKeyCode('T'),          XRCID("go_to_translation") },
+        { wxACCEL_ALT, wxKeyCode('N'),          XRCID("go_to_notes_for_translators") }
     };
 
     wxAcceleratorTable accel(WXSIZEOF(entries), entries);
@@ -3857,4 +3869,29 @@ void PoeditFrame::OnNextPage(wxCommandEvent&)
         return;
     auto pos = std::min(m_list->GetFirstSelected()+10, long(m_list->GetItemCount())-1);
     m_list->SelectOnly(pos);
+}
+
+void PoeditFrame::OnGoToTranslationsList(wxCommandEvent&)
+{
+    if (m_list == nullptr) return;
+    m_list->SetFocus();
+}
+
+void PoeditFrame::OnGoToSourceText(wxCommandEvent&)
+{
+    if (m_textOrig == nullptr) return;
+    m_textOrig->SetFocus();
+}
+
+void PoeditFrame::OnGoToTranslation(wxCommandEvent&)
+{
+    if (m_textTrans == nullptr) return;
+    m_textTrans->SetFocus();
+}
+
+void PoeditFrame::OnGoToNotesForTranslators(wxCommandEvent&)
+{
+    wxWindow* notesForTranslators = wxWindow::FindWindowById(ID_NOTES_FOR_TRANSLATORS, this);
+    if (notesForTranslators == nullptr) return;
+    notesForTranslators->SetFocus();
 }

@@ -268,6 +268,27 @@
         <label platform="unix|mac">Ne_xt Unfinished</label>
         <accel>Ctrl+Shift+Down</accel>
       </object>
+      <object class="separator"/>
+      <object class="wxMenuItem" name="go_to_translations_list">
+        <label platform="win">Go to translations _list</label>
+        <label platform="unix|mac">Go to Translations _List</label>
+        <accel>Alt+L</accel>
+      </object>
+      <object class="wxMenuItem" name="go_to_source_text">
+        <label platform="win">Go to _source text</label>
+        <label platform="unix|mac">Go to _Source Text</label>
+        <accel>Alt+S</accel>
+      </object>
+      <object class="wxMenuItem" name="go_to_translation">
+        <label platform="win">Go to tr_anslation</label>
+        <label platform="unix|mac">Go to Tr_anslation</label>
+        <accel>Alt+T</accel>
+      </object>
+      <object class="wxMenuItem" name="go_to_notes_for_translators">
+        <label platform="win">Go to notes for _translators</label>
+        <label platform="unix|mac">Go to Notes for _Translators</label>
+        <accel>Alt+N</accel>
+      </object>
     </object>
     <object class="wxMenu" name="menu_window" platform="mac">
       <label>Window</label>
