@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poedit\n"
 "Report-Msgid-Bugs-To: help@poedit.net\n"
-"POT-Creation-Date: 2015-09-30 17:34-0500\n"
+"POT-Creation-Date: 2015-06-25 09:54+0200\n"
 "PO-Revision-Date: 2015-06-24 14:07-0400\n"
 "Last-Translator: vslavik <vaclav@slavik.io>\n"
 "Language-Team: Swedish\n"
@@ -276,17 +276,8 @@ msgstr "Om %s"
 msgid "Version %s"
 msgstr "Version %s"
 
-msgid ""
-"Poedit is an easy to use translations editor.\n"
-"\n"
-"With accessibility enhancements by Freedom Scientific."
-msgstr ""
-
-msgid "Václav Slavík"
-msgstr ""
-
-msgid "Ben Key"
-msgstr ""
+msgid "Poedit is an easy to use translations editor."
+msgstr "Poedit är en lättanvänd översättningseditor."
 
 msgid "Catalogs Manager"
 msgstr "Kataloghanterare"
@@ -1585,30 +1576,6 @@ msgstr "Nä&sta ofärdig"
 
 msgid "Ne&xt Unfinished"
 msgstr "Nä&sta Ofärdig"
-
-msgid "Go to translations &list"
-msgstr ""
-
-msgid "Go to Translations &List"
-msgstr ""
-
-msgid "Go to &source text"
-msgstr ""
-
-msgid "Go to &Source Text"
-msgstr ""
-
-msgid "Go to tr&anslation"
-msgstr ""
-
-msgid "Go to Tr&anslation"
-msgstr ""
-
-msgid "Go to notes for &translators"
-msgstr ""
-
-msgid "Go to Notes for &Translators"
-msgstr ""
 
 msgid "&Online help"
 msgstr "O&nline hjälp"

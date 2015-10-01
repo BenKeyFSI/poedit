@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poedit\n"
 "Report-Msgid-Bugs-To: help@poedit.net\n"
-"POT-Creation-Date: 2015-09-30 17:34-0500\n"
+"POT-Creation-Date: 2015-07-22 15:35+0200\n"
 "PO-Revision-Date: 2015-07-22 09:00-0400\n"
 "Last-Translator: vslavik <vaclav@slavik.io>\n"
 "Language-Team: Korean\n"
@@ -273,17 +273,8 @@ msgstr "%s 정보"
 msgid "Version %s"
 msgstr "버전 %s"
 
-msgid ""
-"Poedit is an easy to use translations editor.\n"
-"\n"
-"With accessibility enhancements by Freedom Scientific."
-msgstr ""
-
-msgid "Václav Slavík"
-msgstr ""
-
-msgid "Ben Key"
-msgstr ""
+msgid "Poedit is an easy to use translations editor."
+msgstr "Poedit는 사용하기 쉬운 번역 편집기입니다."
 
 msgid "Catalogs Manager"
 msgstr "카탈로그 관리자"
@@ -1559,30 +1550,6 @@ msgstr "다음 미완료(&X)"
 
 msgid "Ne&xt Unfinished"
 msgstr "다음 미완료(&X)"
-
-msgid "Go to translations &list"
-msgstr ""
-
-msgid "Go to Translations &List"
-msgstr ""
-
-msgid "Go to &source text"
-msgstr ""
-
-msgid "Go to &Source Text"
-msgstr ""
-
-msgid "Go to tr&anslation"
-msgstr ""
-
-msgid "Go to Tr&anslation"
-msgstr ""
-
-msgid "Go to notes for &translators"
-msgstr ""
-
-msgid "Go to Notes for &Translators"
-msgstr ""
 
 msgid "&Online help"
 msgstr "온라인 도움말(&O)"
