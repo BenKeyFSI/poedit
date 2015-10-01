@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poedit\n"
 "Report-Msgid-Bugs-To: help@poedit.net\n"
-"POT-Creation-Date: 2015-09-21 17:33+0200\n"
+"POT-Creation-Date: 2015-10-01 15:03-0500\n"
 "PO-Revision-Date: 2015-09-20 13:08-0400\n"
 "Last-Translator: vslavik <vaclav@slavik.io>\n"
 "Language-Team: Indonesian\n"
@@ -280,6 +280,9 @@ msgstr "Versi %s"
 
 msgid "Poedit is an easy to use translations editor."
 msgstr "Poedit adalah penyunting terjemahan yang mudah dipakai."
+
+msgid "With accessibility enhancements by Freedom Scientific."
+msgstr ""
 
 msgid "Catalogs Manager"
 msgstr "Manajer Katalog"
@@ -1568,6 +1571,30 @@ msgstr "Belum diterjemahkan berikutn&ya"
 
 msgid "Ne&xt Unfinished"
 msgstr "Belum Diterjemahkan Berikutn&ya"
+
+msgid "Go to translations &list"
+msgstr ""
+
+msgid "Go to Translations &List"
+msgstr ""
+
+msgid "Go to &source text"
+msgstr ""
+
+msgid "Go to &Source Text"
+msgstr ""
+
+msgid "Go to tr&anslation"
+msgstr ""
+
+msgid "Go to Tr&anslation"
+msgstr ""
+
+msgid "Go to notes for &translators"
+msgstr ""
+
+msgid "Go to Notes for &Translators"
+msgstr ""
 
 msgid "&Online help"
 msgstr "Bantuan &daring"

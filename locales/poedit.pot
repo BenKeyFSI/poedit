@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the Poedit package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Poedit 1.8.2\n"
+"Project-Id-Version: Poedit 1.8.5\n"
 "Report-Msgid-Bugs-To: help@poedit.net\n"
-"POT-Creation-Date: 2015-07-22 15:35+0200\n"
+"POT-Creation-Date: 2015-10-01 15:03-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -264,6 +264,9 @@ msgid "Version %s"
 msgstr ""
 
 msgid "Poedit is an easy to use translations editor."
+msgstr ""
+
+msgid "With accessibility enhancements by Freedom Scientific."
 msgstr ""
 
 msgid "Catalogs Manager"
@@ -1493,6 +1496,30 @@ msgid "Ne&xt unfinished"
 msgstr ""
 
 msgid "Ne&xt Unfinished"
+msgstr ""
+
+msgid "Go to translations &list"
+msgstr ""
+
+msgid "Go to Translations &List"
+msgstr ""
+
+msgid "Go to &source text"
+msgstr ""
+
+msgid "Go to &Source Text"
+msgstr ""
+
+msgid "Go to tr&anslation"
+msgstr ""
+
+msgid "Go to Tr&anslation"
+msgstr ""
+
+msgid "Go to notes for &translators"
+msgstr ""
+
+msgid "Go to Notes for &Translators"
 msgstr ""
 
 msgid "&Online help"

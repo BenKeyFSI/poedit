@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Poedit 1.6\n"
 "Report-Msgid-Bugs-To: help@poedit.net\n"
-"POT-Creation-Date: 2015-06-25 09:54+0200\n"
+"POT-Creation-Date: 2015-10-01 15:03-0500\n"
 "PO-Revision-Date: 2008-03-03 14:41+0200\n"
 "Last-Translator: Alaksandar Navicki <zolak@lacinka.org>\n"
 "Language-Team: \n"
@@ -274,6 +274,9 @@ msgid "Version %s"
 msgstr "versija"
 
 msgid "Poedit is an easy to use translations editor."
+msgstr ""
+
+msgid "With accessibility enhancements by Freedom Scientific."
 msgstr ""
 
 #, fuzzy
@@ -1614,6 +1617,30 @@ msgid "Ne&xt unfinished"
 msgstr ""
 
 msgid "Ne&xt Unfinished"
+msgstr ""
+
+msgid "Go to translations &list"
+msgstr ""
+
+msgid "Go to Translations &List"
+msgstr ""
+
+msgid "Go to &source text"
+msgstr ""
+
+msgid "Go to &Source Text"
+msgstr ""
+
+msgid "Go to tr&anslation"
+msgstr ""
+
+msgid "Go to Tr&anslation"
+msgstr ""
+
+msgid "Go to notes for &translators"
+msgstr ""
+
+msgid "Go to Notes for &Translators"
 msgstr ""
 
 msgid "&Online help"

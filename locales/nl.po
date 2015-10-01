@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poedit\n"
 "Report-Msgid-Bugs-To: help@poedit.net\n"
-"POT-Creation-Date: 2015-07-22 15:35+0200\n"
+"POT-Creation-Date: 2015-10-01 15:03-0500\n"
 "PO-Revision-Date: 2015-07-22 09:00-0400\n"
 "Last-Translator: vslavik <vaclav@slavik.io>\n"
 "Language-Team: Dutch\n"
@@ -283,6 +283,9 @@ msgstr "Versie %s"
 
 msgid "Poedit is an easy to use translations editor."
 msgstr "Poedit is een eenvoudig te gebruiken vertalingsbewerker."
+
+msgid "With accessibility enhancements by Freedom Scientific."
+msgstr ""
 
 msgid "Catalogs Manager"
 msgstr "Catalogusbeheerder"
@@ -1594,6 +1597,30 @@ msgstr "&Volgende onvoltooide"
 
 msgid "Ne&xt Unfinished"
 msgstr "&Volgende onvoltooide"
+
+msgid "Go to translations &list"
+msgstr ""
+
+msgid "Go to Translations &List"
+msgstr ""
+
+msgid "Go to &source text"
+msgstr ""
+
+msgid "Go to &Source Text"
+msgstr ""
+
+msgid "Go to tr&anslation"
+msgstr ""
+
+msgid "Go to Tr&anslation"
+msgstr ""
+
+msgid "Go to notes for &translators"
+msgstr ""
+
+msgid "Go to Notes for &Translators"
+msgstr ""
 
 msgid "&Online help"
 msgstr "&Hulp op het internet"

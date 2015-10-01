@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poedit\n"
 "Report-Msgid-Bugs-To: help@poedit.net\n"
-"POT-Creation-Date: 2015-06-25 09:54+0200\n"
+"POT-Creation-Date: 2015-10-01 15:03-0500\n"
 "PO-Revision-Date: 2015-06-24 14:07-0400\n"
 "Last-Translator: vslavik <vaclav@slavik.io>\n"
 "Language-Team: Chinese Traditional\n"
@@ -269,6 +269,9 @@ msgstr "版本 %s"
 
 msgid "Poedit is an easy to use translations editor."
 msgstr "Poedit 是個易用的翻譯編輯器。"
+
+msgid "With accessibility enhancements by Freedom Scientific."
+msgstr ""
 
 msgid "Catalogs Manager"
 msgstr "編目檔管理員"
@@ -1524,6 +1527,30 @@ msgstr "下一條未完成(&X)"
 
 msgid "Ne&xt Unfinished"
 msgstr "下一條未完成(&X)"
+
+msgid "Go to translations &list"
+msgstr ""
+
+msgid "Go to Translations &List"
+msgstr ""
+
+msgid "Go to &source text"
+msgstr ""
+
+msgid "Go to &Source Text"
+msgstr ""
+
+msgid "Go to tr&anslation"
+msgstr ""
+
+msgid "Go to Tr&anslation"
+msgstr ""
+
+msgid "Go to notes for &translators"
+msgstr ""
+
+msgid "Go to Notes for &Translators"
+msgstr ""
 
 msgid "&Online help"
 msgstr "線上說明(&O)"
