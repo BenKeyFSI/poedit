@@ -54,6 +54,7 @@ poedit_SOURCES = attentionbar.cpp attentionbar.h \
                  customcontrols.cpp customcontrols.h \
                  hidpi.cpp hidpi.h \
                  main_toolbar.h wx/main_toolbar.cpp \
+                 myStc.cpp myStc.h \
                  $(CROWDIN_SUPPORT_SRC) \
                  $(WX_BACKPORT_SRC)
 nodist_poedit_SOURCES = compiled_xrc.cpp
