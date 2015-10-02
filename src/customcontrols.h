@@ -29,6 +29,7 @@
 #include <wx/stattext.h>
 #include <wx/hyperlink.h>
 #include <wx/xrc/xmlres.h>
+#include <wx/textctrl.h>
 
 class WXDLLIMPEXP_ADV wxActivityIndicator;
 
