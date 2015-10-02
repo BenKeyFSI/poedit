@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Poedit 1.6\n"
 "Report-Msgid-Bugs-To: help@poedit.net\n"
-"POT-Creation-Date: 2015-10-01 15:03-0500\n"
+"POT-Creation-Date: 2015-10-01 22:19-0500\n"
 "PO-Revision-Date: 2008-03-03 14:41+0200\n"
 "Last-Translator: Alaksandar Navicki <zolak@lacinka.org>\n"
 "Language-Team: \n"
@@ -1641,6 +1641,12 @@ msgid "Go to notes for &translators"
 msgstr ""
 
 msgid "Go to Notes for &Translators"
+msgstr ""
+
+msgid "Go to &comment"
+msgstr ""
+
+msgid "Go to &Comment"
 msgstr ""
 
 msgid "&Online help"

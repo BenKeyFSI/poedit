@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poedit\n"
 "Report-Msgid-Bugs-To: help@poedit.net\n"
-"POT-Creation-Date: 2015-10-01 15:03-0500\n"
+"POT-Creation-Date: 2015-10-01 22:19-0500\n"
 "PO-Revision-Date: 2015-06-24 14:07-0400\n"
 "Last-Translator: vslavik <vaclav@slavik.io>\n"
 "Language-Team: Urdu (Pakistan)\n"
@@ -1527,6 +1527,12 @@ msgid "Go to notes for &translators"
 msgstr ""
 
 msgid "Go to Notes for &Translators"
+msgstr ""
+
+msgid "Go to &comment"
+msgstr ""
+
+msgid "Go to &Comment"
 msgstr ""
 
 msgid "&Online help"
