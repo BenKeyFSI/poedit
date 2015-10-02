@@ -51,6 +51,7 @@ class SuggestionWidget;
 class Sidebar;
 
 extern const wxWindowID ID_NOTES_FOR_TRANSLATORS;
+extern const wxWindowID ID_COMMENT;
 
 /// Implements part of the sidebar.
 class SidebarBlock : public std::enable_shared_from_this<SidebarBlock>

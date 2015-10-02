@@ -240,6 +240,7 @@ class PoeditFrame : public wxFrame
         void OnGoToSourceText(wxCommandEvent&);
         void OnGoToTranslation(wxCommandEvent&);
         void OnGoToNotesForTranslators(wxCommandEvent&);
+        void OnGoToComment(wxCommandEvent&);
 
         // Message handlers:
 public: // for PoeditApp

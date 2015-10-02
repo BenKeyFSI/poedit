@@ -48,6 +48,7 @@
 #include <algorithm>
 
 const wxWindowID ID_NOTES_FOR_TRANSLATORS = wxNewId();
+const wxWindowID ID_COMMENT = wxNewId();
 
 #define SIDEBAR_BACKGROUND      wxColour("#EDF0F4")
 #define GRAY_LINES_COLOR        wxColour(220,220,220)
@@ -195,7 +196,7 @@ public:
         : SidebarBlock(parent, _("Comment:"))
     {
         m_innerSizer->AddSpacer(PX(5));
-        m_comment = new SelectableAutoWrappingText(parent, "");
+        m_comment = new AutoWrappingTextCtrl(parent, ID_COMMENT, "");
         m_innerSizer->Add(m_comment, wxSizerFlags().Expand());
     }
 
@@ -208,11 +209,11 @@ public:
     {
         auto text = CommentDialog::RemoveStartHash(item->GetComment());
         text.Trim();
-        m_comment->SetAndWrapLabel(text);
+        m_comment->SetAndWrapText(text);
     }
 
 private:
-    SelectableAutoWrappingText *m_comment;
+    AutoWrappingTextCtrl *m_comment;
 };
 
 

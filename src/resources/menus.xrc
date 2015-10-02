@@ -289,6 +289,11 @@
         <label platform="unix|mac">Go to Notes for _Translators</label>
         <accel>Alt+N</accel>
       </object>
+      <object class="wxMenuItem" name="go_to_comment">
+        <label platform="win">Go to _comment</label>
+        <label platform="unix|mac">Go to _Comment</label>
+        <accel>Alt+C</accel>
+      </object>
     </object>
     <object class="wxMenu" name="menu_window" platform="mac">
       <label>Window</label>
