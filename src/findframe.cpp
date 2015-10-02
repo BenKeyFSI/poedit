@@ -280,7 +280,7 @@ void FindFrame::DoShowFor(int mode)
 
 void FindFrame::OnClose(wxCommandEvent&)
 {
-    Destroy();
+    Show(false);
 }
 
 

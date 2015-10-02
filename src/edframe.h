@@ -392,7 +392,7 @@ private:
 
         AttentionBar *m_attentionBar;
         Sidebar *m_sidebar;
-        wxWeakRef<FindFrame> m_findWindow;
+        wxSharedPtr<FindFrame> m_findWindow;
 
         bool m_modified;
         bool m_hasObsoleteItems;

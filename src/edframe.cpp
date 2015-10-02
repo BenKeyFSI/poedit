@@ -879,7 +879,7 @@ void PoeditFrame::DestroyContentView()
     if (m_findWindow)
     {
         m_findWindow->Destroy();
-        m_findWindow.Release();
+        m_findWindow.reset();
     }
 }
 
@@ -920,6 +920,8 @@ void PoeditFrame::SetAccelerators()
         { wxACCEL_CTRL, WXK_F3,                 XRCID("menu_find_next") },
         { wxACCEL_CTRL | wxACCEL_SHIFT, WXK_F3, XRCID("menu_find_prev") },
 #endif
+        { wxACCEL_CTRL, wxKeyCode('G'),                     XRCID("menu_find_next") },
+        { wxACCEL_CTRL | wxACCEL_SHIFT, wxKeyCode('G'),     XRCID("menu_find_prev") },
 
         { wxACCEL_CTRL, WXK_PAGEUP,             XRCID("go_prev_page") },
         { wxACCEL_CTRL, WXK_NUMPAD_PAGEUP,      XRCID("go_prev_page") },
