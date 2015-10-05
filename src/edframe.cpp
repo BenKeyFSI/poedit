@@ -3322,6 +3322,30 @@ void PoeditFrame::ShowPluralFormUI(bool show)
     origSizer->Show(m_labelSingular, show);
     origSizer->Show(m_labelPlural, show);
     origSizer->Show(m_textOrigPlural, show);
+    /* Screen Readers such as JAWS always try to speak a name for a control when it gains focus. For
+    a text control a screen reader will often obtain the name from the static text object that
+    immediately precedes the text control in the window hierarchy. It will use the text of the
+    static text object that immediately precedes the text control in the window hierarchy even if
+    that static text object is currently hidden. This allows developers to make accessibly changes
+    to their application without affecting the visual appearance of their application.
+
+    For the m_textOrig object, the label the immediately precedes the control is the m_labelSingular
+    object. This causes screen readers such as JAWS to speak Singular when the m_textOrig object
+    gains focus, even if the Plural Form UI is disabled. This is confusing for screen readers.
+
+    The solution is quite simple. When the Plural Form UI is disabled, the label text of the
+    m_labelSingular object is set to "Source text:." When the Plural Form UI is enabled, the label
+    text of the m_labelSingular object is set to "Singular:."
+
+    This change was requested by Freedom Scientific. */
+    if (!show)
+    {
+        m_labelSingular->SetLabelText(_("Source text:"));
+    }
+    else
+    {
+        m_labelSingular->SetLabelText(_("Singular:"));
+    }
     origSizer->Layout();
 
     if (m_textTrans && m_pluralNotebook)
