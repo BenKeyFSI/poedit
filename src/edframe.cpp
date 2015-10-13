@@ -364,6 +364,10 @@ BEGIN_EVENT_TABLE(PoeditFrame, wxFrame)
    EVT_UPDATE_UI(XRCID("menu_update_from_pot"), PoeditFrame::OnUpdateFromPOTUpdate)
    EVT_UPDATE_UI(XRCID("toolbar_update"), PoeditFrame::OnUpdateSmartUpdate)
 
+   // handling of find/replace:
+   EVT_UPDATE_UI(XRCID("menu_find_next"),   PoeditFrame::OnUpdateFind)
+   EVT_UPDATE_UI(XRCID("menu_find_prev"),   PoeditFrame::OnUpdateFind)
+
 #if defined(__WXMSW__) || defined(__WXGTK__)
    EVT_MENU(wxID_UNDO,      PoeditFrame::OnTextEditingCommand)
    EVT_MENU(wxID_REDO,      PoeditFrame::OnTextEditingCommand)
@@ -2107,6 +2111,11 @@ void PoeditFrame::OnFindPrev(wxCommandEvent&)
         m_findWindow->FindPrev();
 }
 
+void PoeditFrame::OnUpdateFind(wxUpdateUIEvent& e)
+{
+    e.Enable(m_catalog && !m_catalog->empty() &&
+             m_findWindow && m_findWindow->HasText());
+}
 
 CatalogItemPtr PoeditFrame::GetCurrentItem() const
 {
@@ -2753,8 +2762,6 @@ void PoeditFrame::UpdateMenu()
     menubar->Enable(XRCID("menu_references"), nonEmpty);
     menubar->Enable(wxID_FIND, nonEmpty);
     menubar->Enable(wxID_REPLACE, nonEmpty);
-    menubar->Enable(XRCID("menu_find_next"), nonEmpty);
-    menubar->Enable(XRCID("menu_find_prev"), nonEmpty);
 
     menubar->Enable(XRCID("menu_auto_translate"), editable);
     menubar->Enable(XRCID("menu_purge_deleted"), editable);
