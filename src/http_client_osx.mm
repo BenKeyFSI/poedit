@@ -26,6 +26,7 @@
 #include "http_client.h"
 
 #include "str_helpers.h"
+#include "version.h"
 
 #import "AFHTTPClient.h"
 #import "AFJSONRequestOperation.h"
@@ -123,6 +124,17 @@ public:
 
         [m_native registerHTTPOperationClass:[AFJSONRequestOperation class]];
         [m_native setDefaultHeader:@"Accept" value:@"application/json"];
+
+        // AFNetworking operations aren't CPU-bound, so shouldn't use the default queue
+        // size limits. This avoids request stalling at the cost of sending more requests
+        // to the server.
+        [m_native.operationQueue setMaxConcurrentOperationCount:NSIntegerMax];
+
+        NSOperatingSystemVersion osx = [[NSProcessInfo processInfo] operatingSystemVersion];
+        NSString *osx_str = (osx.patchVersion == 0)
+                            ? [NSString stringWithFormat:@"%d.%d", (int)osx.majorVersion, (int)osx.minorVersion]
+                            : [NSString stringWithFormat:@"%d.%d.%d", (int)osx.majorVersion, (int)osx.minorVersion, (int)osx.patchVersion];
+        [m_native setDefaultHeader:@"User-Agent" value:[NSString stringWithFormat:@"Poedit/%s (Mac OS X %@)", POEDIT_VERSION, osx_str]];
     }
 
     ~impl()
