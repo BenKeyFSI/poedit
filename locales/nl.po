@@ -1014,6 +1014,9 @@ msgstr "In vertalingen zoeken"
 msgid "Find in comments"
 msgstr "In opmerkingen zoeken"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Sluiten"
 

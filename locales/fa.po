@@ -936,6 +936,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "یافتن در توضیحات"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "ببند"
 

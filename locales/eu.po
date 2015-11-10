@@ -998,6 +998,9 @@ msgstr "Bilatu itzulpenetan"
 msgid "Find in comments"
 msgstr "Bilatu aipamenetan"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Itxi"
 

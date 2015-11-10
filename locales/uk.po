@@ -1004,6 +1004,9 @@ msgstr "Пошук у перекладах"
 msgid "Find in comments"
 msgstr "Шукати в коментарях"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Закрити"
 

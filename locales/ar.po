@@ -996,6 +996,9 @@ msgstr "اعثر في التّرجمات"
 msgid "Find in comments"
 msgstr "اعثر في التّعليقات"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "أغلق"
 

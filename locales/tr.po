@@ -1000,6 +1000,9 @@ msgstr "Çevirilerde bul"
 msgid "Find in comments"
 msgstr "Açıklamalarda bul"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Kapat"
 

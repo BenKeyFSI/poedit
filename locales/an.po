@@ -1010,6 +1010,9 @@ msgstr "Mirar en as traduccions"
 msgid "Find in comments"
 msgstr "Mirar en os comentarios"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Zarrar"
 

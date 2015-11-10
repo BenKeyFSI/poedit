@@ -959,6 +959,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "Meklēt komentāros"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Aizvērt"
 

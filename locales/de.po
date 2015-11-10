@@ -1015,6 +1015,9 @@ msgstr "In Übersetzungen suchen"
 msgid "Find in comments"
 msgstr "In Kommentaren suchen"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Schließen"
 

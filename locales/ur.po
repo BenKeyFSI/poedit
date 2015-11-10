@@ -941,6 +941,9 @@ msgstr "ترجموں میں ڈھونڈیں"
 msgid "Find in comments"
 msgstr "تبصروں میں ڈھونڈیں"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr ""
 

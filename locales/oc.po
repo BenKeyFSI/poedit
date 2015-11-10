@@ -1010,6 +1010,9 @@ msgstr "Trobar dins las traduccions"
 msgid "Find in comments"
 msgstr "Trobar dins los comentaris"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Tampar"
 

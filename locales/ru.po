@@ -1011,6 +1011,9 @@ msgstr "Искать в переводах"
 msgid "Find in comments"
 msgstr "Искать в комментариях"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Закрыть"
 

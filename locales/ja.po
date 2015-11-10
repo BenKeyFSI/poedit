@@ -981,6 +981,9 @@ msgstr "翻訳された文字列を検索対象に含める"
 msgid "Find in comments"
 msgstr "コメントを検索対象に含める"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "閉じる"
 

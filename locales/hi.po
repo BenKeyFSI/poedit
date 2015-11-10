@@ -941,6 +941,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "टिप्पणी मे खोजे"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr ""
 

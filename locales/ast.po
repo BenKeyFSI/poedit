@@ -940,6 +940,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "Buscar en comentarios"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr ""
 

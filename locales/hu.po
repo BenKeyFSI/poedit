@@ -998,6 +998,9 @@ msgstr "Keresés a fordításban"
 msgid "Find in comments"
 msgstr "Keresés a megjegyzésekben"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Bezárás"
 

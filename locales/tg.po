@@ -1010,6 +1010,9 @@ msgstr "Ҷустуҷӯ дар тарҷумаҳо"
 msgid "Find in comments"
 msgstr "Ҷустуҷӯ дар шарҳҳо"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Пӯшидан"
 

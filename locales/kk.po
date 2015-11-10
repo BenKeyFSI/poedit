@@ -948,6 +948,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "Түсіндірмелер ішінен іздеу"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Жабу"
 

@@ -937,6 +937,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr ""
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Slute"
 

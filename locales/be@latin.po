@@ -994,6 +994,9 @@ msgstr "Pierakład"
 msgid "Find in comments"
 msgstr "Znajdzi ŭ kamentaroch"
 
+msgid "Find in msgctx"
+msgstr ""
+
 #, fuzzy
 msgid "Close"
 msgstr "Za&čyni"

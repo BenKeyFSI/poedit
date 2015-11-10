@@ -987,6 +987,9 @@ msgstr "Търсене в &преводите"
 msgid "Find in comments"
 msgstr "Търсене в &коментарите"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "&Затваряне"
 

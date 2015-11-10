@@ -983,6 +983,9 @@ msgstr "Tìm trong phần dịch"
 msgid "Find in comments"
 msgstr "Tìm trong chú thích"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Đóng"
 

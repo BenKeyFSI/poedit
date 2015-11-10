@@ -989,6 +989,9 @@ msgstr "Find in translations"
 msgid "Find in comments"
 msgstr "Find in comments"
 
+msgid "Find in msgctx"
+msgstr "Find in msgctx"
+
 msgid "Close"
 msgstr "Close"
 

@@ -955,6 +955,9 @@ msgstr "دۆزینەوە لە وەرگێڕاندا"
 msgid "Find in comments"
 msgstr "دۆزینەوە لە لێدوانەکان"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "داخستن"
 

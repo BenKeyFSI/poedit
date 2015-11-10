@@ -944,6 +944,9 @@ msgstr "மொழிபெயர்ப்புகளில் தேடுக"
 msgid "Find in comments"
 msgstr "குறிப்புகளில் தேடுக"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr ""
 

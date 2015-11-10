@@ -993,6 +993,9 @@ msgstr "Szukaj w tłumaczeniach"
 msgid "Find in comments"
 msgstr "Szukaj w komentarzach"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Za&mknij"
 

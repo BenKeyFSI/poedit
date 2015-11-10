@@ -1010,6 +1010,9 @@ msgstr "Hľadať v prekladoch"
 msgid "Find in comments"
 msgstr "Vyhľadať v komentároch"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Zatvoriť"
 

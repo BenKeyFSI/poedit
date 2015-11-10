@@ -954,6 +954,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "Di şîrovan de bibîne"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr ""
 

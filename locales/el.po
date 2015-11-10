@@ -989,6 +989,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "Ανεύρεση στα σχόλια"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Κλείσιμο"
 

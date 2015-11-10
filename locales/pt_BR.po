@@ -1002,6 +1002,9 @@ msgstr "Achar nas traduções"
 msgid "Find in comments"
 msgstr "Achar nos comentários"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Fechar"
 

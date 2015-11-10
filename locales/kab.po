@@ -990,6 +990,9 @@ msgstr "Nadi di tsuqilin"
 msgid "Find in comments"
 msgstr "Nadi deg yiwenniten"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Mdel"
 

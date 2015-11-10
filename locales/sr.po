@@ -992,6 +992,9 @@ msgstr "&Преводи"
 msgid "Find in comments"
 msgstr "&Коментари"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "&Затвори"
 

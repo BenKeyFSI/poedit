@@ -982,6 +982,9 @@ msgstr "Finna í þýðingum"
 msgid "Find in comments"
 msgstr "Finna í athugasemdum"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Loka"
 

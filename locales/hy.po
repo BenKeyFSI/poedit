@@ -993,6 +993,9 @@ msgstr "Գտնել թարգմանություններում"
 msgid "Find in comments"
 msgstr "Գտնել մեկնաբանություններում"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Փակել"
 

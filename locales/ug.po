@@ -947,6 +947,9 @@ msgstr "تەرجىمىدىن ئىزدە"
 msgid "Find in comments"
 msgstr "ئىزاھاتتىن ئىزدە"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "ياپ"
 

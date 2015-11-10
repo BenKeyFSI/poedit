@@ -991,6 +991,9 @@ msgstr "Finn i oversettelser"
 msgid "Find in comments"
 msgstr "Finn i kommentarer"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Lukk"
 

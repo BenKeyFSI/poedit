@@ -964,6 +964,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "შენიშვნებში ძიება"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "დაკეტვა"
 

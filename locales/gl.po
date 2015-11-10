@@ -1004,6 +1004,9 @@ msgstr "Buscar nas traducións"
 msgid "Find in comments"
 msgstr "Buscar nos comentarios"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Pechar"
 

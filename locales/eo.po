@@ -942,6 +942,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "Serĉi en komentoj"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Fermi"
 

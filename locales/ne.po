@@ -950,6 +950,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "टिप्पणीमा फेला पार"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "&बन्द गर"
 

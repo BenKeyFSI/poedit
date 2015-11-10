@@ -953,6 +953,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "Otsitakse kommentaaridest"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Sulge"
 

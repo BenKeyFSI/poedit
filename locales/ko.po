@@ -972,6 +972,9 @@ msgstr "번역에서 찾기"
 msgid "Find in comments"
 msgstr "주석에서 찾기"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "닫기"
 

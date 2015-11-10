@@ -952,6 +952,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "Cjate tai coments"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr ""
 

@@ -959,6 +959,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "Барај во коментари"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Затвори"
 

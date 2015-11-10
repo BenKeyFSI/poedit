@@ -998,6 +998,9 @@ msgstr "Sök i översättningar"
 msgid "Find in comments"
 msgstr "Sök i kommentarer"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Stäng"
 

@@ -965,6 +965,9 @@ msgstr "Cari dalam terjemahan"
 msgid "Find in comments"
 msgstr "Cari dalam komen"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Tutup"
 

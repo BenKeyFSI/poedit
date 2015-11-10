@@ -939,6 +939,9 @@ msgstr "ਅਨੁਵਾਦ ਵਿੱਚ ਲੱਭੋ"
 msgid "Find in comments"
 msgstr "ਟਿੱਪਣੀ ਵਿੱਚ ਖੋਜ"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "ਬੰਦ ਕਰੋ"
 

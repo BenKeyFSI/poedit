@@ -1006,6 +1006,9 @@ msgstr "Hledat v překladech"
 msgid "Find in comments"
 msgstr "Hledat v komentářích"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Zavřít"
 

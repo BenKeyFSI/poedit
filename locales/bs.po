@@ -999,6 +999,9 @@ msgstr "Pronađi u prijevodima"
 msgid "Find in comments"
 msgstr "Pronađi u komentarima"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Zatvori"
 

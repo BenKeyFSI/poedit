@@ -946,6 +946,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "Cerca a els comentaris"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr ""
 

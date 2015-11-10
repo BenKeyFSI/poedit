@@ -932,6 +932,9 @@ msgstr "ค้นหาในการแปล"
 msgid "Find in comments"
 msgstr "ค้นหาในความคิดเห็น"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr ""
 

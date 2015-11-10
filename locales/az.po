@@ -982,6 +982,9 @@ msgstr "Tərcümələrdə tap"
 msgid "Find in comments"
 msgstr "Şərhlərdə tapın"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Bağla"
 

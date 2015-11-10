@@ -986,6 +986,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "Găsește în comentarii"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Închide"
 

@@ -942,6 +942,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "Klask e-touez an evezhiadennoù"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr ""
 

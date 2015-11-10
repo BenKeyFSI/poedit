@@ -939,6 +939,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "አስተያየት ውስጥ አግኝ"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr ""
 

@@ -978,6 +978,9 @@ msgstr "Poišči med prevodi"
 msgid "Find in comments"
 msgstr "Najdi v opombah"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Zapri"
 

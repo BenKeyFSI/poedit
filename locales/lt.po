@@ -979,6 +979,9 @@ msgstr "Ieškoti vertime"
 msgid "Find in comments"
 msgstr "Ieškoti komentaruose"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Užverti"
 

@@ -953,6 +953,9 @@ msgstr "在翻译中查找"
 msgid "Find in comments"
 msgstr "在注释中查找"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "关闭"
 

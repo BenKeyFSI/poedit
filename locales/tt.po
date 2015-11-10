@@ -938,6 +938,9 @@ msgstr "Tärcemälär arasında"
 msgid "Find in comments"
 msgstr "Añlatmada ezlise"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr ""
 

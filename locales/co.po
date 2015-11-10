@@ -1010,6 +1010,9 @@ msgstr "Circà in e traduzzioni"
 msgid "Find in comments"
 msgstr "Circà in i cummenti"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "Chjode"
 

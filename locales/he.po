@@ -953,6 +953,9 @@ msgstr ""
 msgid "Find in comments"
 msgstr "חיפוש בהערות"
 
+msgid "Find in msgctx"
+msgstr ""
+
 msgid "Close"
 msgstr "סגירה"
 
