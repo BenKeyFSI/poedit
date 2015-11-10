@@ -91,7 +91,7 @@ class FindFrame : public wxFrame
         wxChoice *m_mode;
         wxTextCtrl *m_searchField, *m_replaceField;
         wxCheckBox *m_ignoreCase, *m_wrapAround, *m_wholeWords,
-                   *m_findInOrig, *m_findInTrans, *m_findInComments;
+            *m_findInOrig, *m_findInTrans, *m_findInComments, *m_findInMsgCtx;
 
         wxWeakRef<PoeditListCtrl> m_listCtrl;
         CatalogPtr m_catalog;

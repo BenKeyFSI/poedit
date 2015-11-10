@@ -125,6 +125,7 @@ FindFrame::FindFrame(PoeditFrame *owner,
     m_findInOrig = new wxCheckBox(collPane, wxID_ANY, _("Find in source texts"));
     m_findInTrans = new wxCheckBox(collPane, wxID_ANY, _("Find in translations"));
     m_findInComments = new wxCheckBox(collPane, wxID_ANY, _("Find in comments"));
+    m_findInMsgCtx = new wxCheckBox(collPane, wxID_ANY, _("Find in msgctx"));
 
     wxBoxSizer *options = new wxBoxSizer(wxHORIZONTAL);
     wxBoxSizer *optionsL = new wxBoxSizer(wxVERTICAL);
@@ -137,6 +138,7 @@ FindFrame::FindFrame(PoeditFrame *owner,
     optionsR->Add(m_findInOrig, wxSizerFlags().Expand().Border(wxTOP, PX(2)));
     optionsR->Add(m_findInTrans, wxSizerFlags().Expand().Border(wxTOP, PX(2)));
     optionsR->Add(m_findInComments, wxSizerFlags().Expand().Border(wxTOP, PX(2)));
+    optionsR->Add(m_findInMsgCtx, wxSizerFlags().Expand().Border(wxTOP, PX(2)));
 
 #ifdef __WXMSW__
     sizer->Add(options, wxSizerFlags().Expand().PXBorderAll());
@@ -179,6 +181,7 @@ FindFrame::FindFrame(PoeditFrame *owner,
     m_findInOrig->SetValue(wxConfig::Get()->ReadBool("find_in_orig", true));
     m_findInTrans->SetValue(wxConfig::Get()->ReadBool("find_in_trans", true));
     m_findInComments->SetValue(wxConfig::Get()->ReadBool("find_in_comments", true));
+    m_findInMsgCtx->SetValue(wxConfig::Get()->ReadBool("find_in_msgctx", true));
     m_ignoreCase->SetValue(!wxConfig::Get()->ReadBool("find_case_sensitive", false));
     m_wrapAround->SetValue(wxConfig::Get()->ReadBool("find_wrap_around", true));
     m_wholeWords->SetValue(wxConfig::Get()->ReadBool("whole_words", false));
@@ -297,6 +300,7 @@ void FindFrame::OnModeChanged()
     m_findInOrig->Enable(!isReplace);
     m_findInTrans->Enable(!isReplace);
     m_findInComments->Enable(!isReplace);
+    m_findInMsgCtx->Enable(!isReplace);
     m_ignoreCase->Enable(!isReplace);
 
     Layout();
@@ -320,6 +324,7 @@ void FindFrame::OnCheckbox(wxCommandEvent&)
     wxConfig::Get()->Write("find_in_orig", m_findInOrig->GetValue());
     wxConfig::Get()->Write("find_in_trans", m_findInTrans->GetValue());
     wxConfig::Get()->Write("find_in_comments", m_findInComments->GetValue());
+    wxConfig::Get()->Write("find_in_msgctx", m_findInMsgCtx->GetValue());
     wxConfig::Get()->Write("find_case_sensitive", !m_ignoreCase->GetValue());
     wxConfig::Get()->Write("find_wrap_around", m_wrapAround->GetValue());
     wxConfig::Get()->Write("whole_words", m_wholeWords->GetValue());
@@ -434,7 +439,8 @@ enum FoundState
     Found_InOrig,
     Found_InTrans,
     Found_InComments,
-    Found_InExtractedComments
+    Found_InExtractedComments,
+    Found_InMsgCtx
 };
 
 } // anonymous space
@@ -451,6 +457,7 @@ bool FindFrame::DoFind(int dir)
     bool inTrans = m_findInTrans->GetValue()  && (m_catalog->HasCapability(Catalog::Cap::Translations));
     bool inSource = (mode == Mode_Find) && m_findInOrig->GetValue();
     bool inComments = (mode == Mode_Find) && m_findInComments->GetValue();
+    bool inMsgCtx = (mode == Mode_Find) && m_findInMsgCtx->GetValue();
     bool ignoreCase = (mode == Mode_Find) && m_ignoreCase->GetValue();
     bool wholeWords = m_wholeWords->GetValue();
     bool wrapAround = m_wrapAround->GetValue();
@@ -524,6 +531,14 @@ bool FindFrame::DoFind(int dir)
                 break;
             }
         }
+        if (inMsgCtx)
+        {
+            if (IsTextInString(dt->GetContext(), text, ignoreCase, wholeWords, ignoreAmp, ignoreUnderscore))
+            {
+                found = Found_InMsgCtx;
+                break;
+            }
+        }
     }
 
     if (found != Found_Not)
@@ -554,6 +569,7 @@ bool FindFrame::DoFind(int dir)
               break;
             case Found_InComments:
             case Found_InExtractedComments:
+            case Found_InMsgCtx:
             case Found_Not:
               break;
         }
