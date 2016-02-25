@@ -60,6 +60,7 @@ static const struct option long_options[] =
 {
   { "add-location", optional_argument, NULL, 'n' },
   { "color", optional_argument, NULL, CHAR_MAX + 5 },
+  { "combine-refs", no_argument, NULL, CHAR_MAX + 8 },
   { "directory", required_argument, NULL, 'D' },
   { "escape", no_argument, NULL, 'E' },
   { "force-po", no_argument, &force_po, 1 },
@@ -80,7 +81,6 @@ static const struct option long_options[] =
   { "style", required_argument, NULL, CHAR_MAX + 6 },
   { "version", no_argument, NULL, 'V' },
   { "width", required_argument, NULL, 'w', },
-  { "combine-refs", no_argument, NULL, CHAR_MAX + 8 },
   { NULL, 0, NULL, 0 }
 };
 

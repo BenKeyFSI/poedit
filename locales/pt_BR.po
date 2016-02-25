@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poedit\n"
 "Report-Msgid-Bugs-To: help@poedit.net\n"
-"POT-Creation-Date: 2015-10-20 13:51+0200\n"
-"PO-Revision-Date: 2015-10-20 07:51-0400\n"
+"POT-Creation-Date: 2016-02-02 18:06+0100\n"
+"PO-Revision-Date: 2016-02-02 04:19-0500\n"
 "Last-Translator: vslavik <vaclav@slavik.io>\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
@@ -90,7 +90,7 @@ msgstr ""
 "configuração foi modificada de acordo."
 
 msgid "Error saving catalog"
-msgstr "Erro ao salvar o catálogo"
+msgstr "Erro ao salvar catálogo"
 
 msgid "PO Translation Files"
 msgstr "Arquivos de Tradução PO"
@@ -115,13 +115,13 @@ msgid "Select your preferred language"
 msgstr "Selecione o idioma preferido"
 
 msgid "Language selection"
-msgstr "Seleção de idioma"
+msgstr "Selecionar idioma"
 
 msgid "You must restart Poedit for this change to take effect."
-msgstr "Você deve reiniciar o Poedit pra esta mudança ter efeito."
+msgstr "Você deve reiniciar o Poedit para validar as alterações."
 
 msgid "Downloading translations is disabled in this project."
-msgstr "O download de traduções está desativado neste projeto."
+msgstr "A transferência de traduções está desativada neste projeto."
 
 msgid "Not authorized, please sign in again."
 msgstr "Não autorizado, por favor logue de novo."
@@ -141,10 +141,10 @@ msgid "Sign in"
 msgstr "Logar"
 
 msgid "Sign Out"
-msgstr "Sair"
+msgstr "Encerrar Sessão"
 
 msgid "Sign out"
-msgstr "Sair"
+msgstr "Encerrar sessão"
 
 msgid "Waiting for authentication…"
 msgstr "Esperando pela autenticação…"
@@ -183,10 +183,10 @@ msgid "This project has no files that can be translated in Poedit."
 msgstr "Este projeto não tem arquivos que possam ser traduzidos no Poedit."
 
 msgid "This file can only be edited in Crowdin’s web interface."
-msgstr "Este arquivo pode ser editado somente na interface web do Crowdin."
+msgstr "Este arquivo pode ser editado apenas na interface web do Crowdin."
 
 msgid "Downloading latest translations…"
-msgstr "Baixando as traduções mais recentes…"
+msgstr "Transferindo as traduções mais recentes…"
 
 msgid "Syncing with Crowdin"
 msgstr "Sincronizando com o Crowdin"
@@ -217,7 +217,7 @@ msgid "Failed to merge gettext catalogs."
 msgstr "Falhou em unir os catálogos do gettext."
 
 msgid "Scanning files..."
-msgstr "Escaneando arquivos..."
+msgstr "Verificando arquivos..."
 
 #. TRANSLATORS: '%s' is replaced with the kind of the files (e.g. C++, PHP, ...)
 #, c-format
@@ -228,7 +228,7 @@ msgid "Failed to load extracted catalog."
 msgstr "Falha ao carregar o catálogo extraído."
 
 msgid "&Help"
-msgstr "&Ajuda"
+msgstr "A&juda"
 
 msgid "MO files can’t be directly edited in Poedit."
 msgstr "Arquivos MO não podem ser editados diretamente no Poedit."
@@ -315,10 +315,10 @@ msgid "Check Document Now"
 msgstr "Verificar Documento Agora"
 
 msgid "Check Spelling While Typing"
-msgstr "Verificar Ortografia Enquanto Digitar"
+msgstr "Verificar Ortografia ao Digitar"
 
 msgid "Check Grammar With Spelling"
-msgstr "Verificar Gramática com Ortografia"
+msgstr "Verificar Gramática e Ortografia"
 
 msgid "Correct Spelling Automatically"
 msgstr "Corrigir Ortografia Automaticamente"
@@ -378,7 +378,7 @@ msgid "Minimize"
 msgstr "Minimizar"
 
 msgid "Zoom"
-msgstr "Zoom"
+msgstr "Ampliar/Reduzir"
 
 msgid "Bring All to Front"
 msgstr "Trazer Tudo pra Frente"
@@ -387,7 +387,7 @@ msgid "PO Translation"
 msgstr "Tradução PO"
 
 msgid "The file cannot be opened."
-msgstr "O arquivo não pode ser aberto."
+msgstr "O arquivo não pôde ser aberto."
 
 msgid "Invalid file"
 msgstr "Arquivo inválido"
@@ -395,7 +395,7 @@ msgstr "Arquivo inválido"
 msgid ""
 "The file may be either corrupted or in a format not recognized by Poedit."
 msgstr ""
-"O arquivo pode estar corrompido ou num formato não reconhecido pelo Poedit."
+"O arquivo pode estar corrompido ou em um formato não reconhecido pelo Poedit."
 
 msgid "&Undo"
 msgstr "&Desfazer"
@@ -404,22 +404,22 @@ msgid "&Redo"
 msgstr "&Refazer"
 
 msgid "Cu&t"
-msgstr "Co&rtar"
+msgstr "Recor&tar"
 
 msgid "Cut"
-msgstr "Cortar"
+msgstr "Recortar"
 
 msgid "Copy"
 msgstr "Copiar"
 
 msgid "&Paste"
-msgstr "&Colar"
+msgstr "Co&lar"
 
 msgid "Paste"
 msgstr "Colar"
 
 msgid "&Delete"
-msgstr "&Apagar"
+msgstr "Apa&gar"
 
 msgid "Select &All"
 msgstr "Selecionar &Tudo"
@@ -482,7 +482,7 @@ msgid "&Go"
 msgstr "&Ir"
 
 msgid "Source text:"
-msgstr "Texto fonte:"
+msgstr "Texto de origem:"
 
 msgid "Singular:"
 msgstr "Singular:"
@@ -517,7 +517,7 @@ msgid ""
 "7. Microsoft is offering free upgrades to Windows 10 until July 29, 2016."
 msgstr ""
 "Poedit necessita do Windows 8 ou mais recente para verificação ortográfica, "
-"mas se você tem apenas Windows 7, a Microsoft está oferecendo atualização "
+"mas se você tem apenas Windows 7. A Microsoft está oferecendo atualização "
 "gratuita para o Windows 10 até 29 de julho de 2016."
 
 #. TRANSLATORS: %s is language name in its basic form (as you
@@ -856,10 +856,10 @@ msgstr[0] "%u string traduzida"
 msgstr[1] "%u strings traduzidas"
 
 msgid "Copy from source text"
-msgstr "Copiar do texto fonte"
+msgstr "Copiar do texto de origem"
 
 msgid "Copy from Source Text"
-msgstr "Copiar do Texto Fonte"
+msgstr "Copiar do texto de origem"
 
 msgid "Clear translation"
 msgstr "Limpar tradução"
@@ -943,7 +943,7 @@ msgstr "ID"
 
 #, c-format
 msgid "Source text — %s"
-msgstr "Texto fonte — %s"
+msgstr "Texto de origem — %s"
 
 msgid "unknown language"
 msgstr "idioma desconhecido"
@@ -956,10 +956,10 @@ msgid "Error:"
 msgstr "Erro:"
 
 msgid "Source file"
-msgstr "Arquivo fonte"
+msgstr "Arquivo de origem"
 
 msgid "Source file occurrence:"
-msgstr "Ocorrência do arquivo fonte:"
+msgstr "Ocorrência do arquivo de origem:"
 
 msgid "Open in Editor"
 msgstr "Abrir no editor"
@@ -1015,10 +1015,10 @@ msgid "Replace all"
 msgstr "Substituir tudo"
 
 msgid "< &Previous"
-msgstr "< &Anterior"
+msgstr "< An&terior"
 
 msgid "&Next >"
-msgstr "&Próximo >"
+msgstr "Segui&nte >"
 
 msgid "String to find"
 msgstr "String para achar"
@@ -1049,7 +1049,7 @@ msgid "Total"
 msgstr "Total"
 
 msgid "Untrans"
-msgstr "Sem Tradução"
+msgstr "Não Traduzido"
 
 msgid "Fuzzy"
 msgstr "Incerto"
@@ -1329,7 +1329,7 @@ msgid "Additional keywords"
 msgstr "Palavras-chave adicionais"
 
 msgid "Name of the project the translation is for"
-msgstr "Nome do projeto para o qual é a tradução"
+msgstr "Nome do projeto que destina-se a tradução"
 
 msgid "e.g. nplurals=2; plural=(n > 1);"
 msgstr "ex: nplurals=2; plural=(n > 1);"
@@ -1385,13 +1385,13 @@ msgid "&Preferences..."
 msgstr "&Preferências..."
 
 msgid "&Close"
-msgstr "&Fechar"
+msgstr "Fe&char"
 
 msgid "E&xit"
 msgstr "S&air"
 
 msgid "Quit"
-msgstr "Sair"
+msgstr "Fechar"
 
 msgid "&New..."
 msgstr "&Novo..."
@@ -1403,7 +1403,7 @@ msgid "New From &POT/PO File..."
 msgstr "Novo do Arquivo &POT/PO..."
 
 msgid "&Open..."
-msgstr "&Abrir..."
+msgstr "A&brir..."
 
 msgid "Open Recent"
 msgstr "Abrir Recente"
@@ -1437,6 +1437,12 @@ msgstr "Gerenciador de &catálogos"
 
 msgid "Catalogs &Manager"
 msgstr "Gerenciador de &Catálogos"
+
+msgid "Copy from singular"
+msgstr "Copiar do singular"
+
+msgid "Copy From Singular"
+msgstr "Copiar do Singular"
 
 msgid "Translation is &fuzzy"
 msgstr "A tradução está &incerta"
@@ -1517,7 +1523,7 @@ msgid "Entries with errors first"
 msgstr "Entradas com erros primeiro"
 
 msgid "Entries with Errors First"
-msgstr "Entradas com Erros Primeiro"
+msgstr "Entradas com erros primeiro"
 
 msgid "&Untranslated entries first"
 msgstr "&Entradas não traduzidas primeiro"
@@ -1571,10 +1577,10 @@ msgid "&Properties..."
 msgstr "&Propriedades..."
 
 msgid "&Done and next"
-msgstr "&Feito e próximo"
+msgstr "&Finalizar e avançar"
 
 msgid "&Done and Next"
-msgstr "&Feito e Próximo"
+msgstr "&Finalizar e Avançar"
 
 msgid "&Previous translation"
 msgstr "&Tradução anterior"
@@ -1630,6 +1636,18 @@ msgstr ""
 msgid "Go to &Comment"
 msgstr ""
 
+msgid "Previous plural form"
+msgstr "Forma do plural anterior"
+
+msgid "Previous Plural Form"
+msgstr "Forma do Plural Anterior"
+
+msgid "Next plural form"
+msgstr "Próxima forma do plural"
+
+msgid "Next Plural Form"
+msgstr "Próxima Forma do Plural"
+
 msgid "&Online help"
 msgstr "&Ajuda online"
 
@@ -1672,7 +1690,7 @@ msgstr ""
 "%C para o sinalizador de conjunto de caracteres (veja abaixo)."
 
 msgid "An item in keywords list:"
-msgstr "Um item da lista de palavras-chave:"
+msgstr "Um item na lista de palavras-chave:"
 
 msgid ""
 "This will be attached to the command line once\n"
@@ -1682,7 +1700,7 @@ msgstr ""
 "para cada palavra-chave. %k expande para a palavra-chave."
 
 msgid "An item in input files list:"
-msgstr "Um item da lista de arquivos de entrada:"
+msgstr "Um item na lista de arquivos de entrada:"
 
 #, c-format
 msgid ""
@@ -1693,7 +1711,7 @@ msgstr ""
 "para cada arquivo de entrada. %f expande para o nome do arquivo."
 
 msgid "Source code charset:"
-msgstr "Conjunto de caracteres do código fonte:"
+msgstr "Conjunto de caracteres do código de origem:"
 
 #, c-format
 msgid ""
@@ -1723,7 +1741,7 @@ msgid "Learn about plural forms"
 msgstr "Aprenda sobre as formas do plural"
 
 msgid "Charset:"
-msgstr "Tabela de caracteres:"
+msgstr "Conjunto de caracteres:"
 
 msgid "Team:"
 msgstr "Time:"
@@ -1735,7 +1753,7 @@ msgid "Translation properties"
 msgstr "Propriedades da tradução"
 
 msgid "Sources paths"
-msgstr "Caminhos das fontes"
+msgstr "Caminhos dos originais"
 
 msgid "Extract text from source files in the following directories:"
 msgstr "Extrair texto dos arquivos fonte nos seguintes diretórios:"
@@ -1919,7 +1937,7 @@ msgid "What is Crowdin?"
 msgstr "O que é Crowdin?"
 
 msgid "There are no translations. That’s unusual."
-msgstr "Não há traduções. Isso é incomum."
+msgstr "Não existem traduções. Isso não é comum."
 
 msgid ""
 "Translatable entries aren't added manually in the Gettext system, but are "
@@ -1953,13 +1971,13 @@ msgstr ""
 "Você também pode extrair strings traduzíveis diretamente do código fonte:"
 
 msgid "Extract from sources"
-msgstr "Extrair das fontes"
+msgstr "Extrair dos originais"
 
 msgid "Configure source code extraction in Properties."
-msgstr "Configurar extração do código fonte em Propriedades."
+msgstr "Configurar a extração do código de origem nas propriedades."
 
 msgid "Sync"
-msgstr "Sincronizar"
+msgstr "Sincronização"
 
 msgid "Synchronize the translation with Crowdin"
-msgstr "Sincronizar tradução com Crowdin"
+msgstr "Sincronizar tradução com o Crowdin"

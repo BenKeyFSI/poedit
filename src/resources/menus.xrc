@@ -88,6 +88,12 @@
         <label platform="unix|mac">Copy from Source Text</label>
         <accel>Ctrl+B</accel>
       </object>
+      <object class="wxMenuItem" name="menu_copy_from_singular">
+          <label platform="win">Copy from singular</label>
+          <label platform="unix|mac">Copy From Singular</label>
+          <accel>Ctrl+Shift+B</accel>
+      </object>
+      <object class="separator"/>
       <object class="wxMenuItem" name="menu_fuzzy">
         <label platform="win">Translation is _fuzzy</label>
         <label platform="unix|mac">Translation Is _Fuzzy</label>
@@ -269,6 +275,16 @@
         <accel>Ctrl+Shift+Down</accel>
       </object>
       <object class="separator"/>
+      <object class="wxMenuItem" name="go_prev_pluralform">
+          <label platform="win">Previous plural form</label>
+          <label platform="unix|mac">Previous Plural Form</label>
+          <accel>Ctrl+Alt+Left</accel>
+      </object>
+      <object class="wxMenuItem" name="go_next_pluralform">
+          <label platform="win">Next plural form</label>
+          <label platform="unix|mac">Next Plural Form</label>
+          <accel>Ctrl+Alt+Right</accel>
+      </object>
       <object class="wxMenuItem" name="go_to_translations_list">
         <label platform="win">Go to translations _list</label>
         <label platform="unix|mac">Go to Translations _List</label>

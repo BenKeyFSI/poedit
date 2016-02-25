@@ -304,6 +304,7 @@ message_print_comment_dot (const message_ty *mp, ostream_t stream)
     }
 }
 
+
 /* This variable controls whether or not an attempt is made to combine multiple file references on
 one line. The default is to not do so. The old behavior of combining multiple file references on one
 line can be restored by calling the message_page_combine_refs function, which is user accessible via
@@ -523,6 +524,7 @@ message_print_comment_flags (const message_ty *mp, ostream_t stream, bool debug)
 
 /* ========= Some parameters for use by 'msgdomain_list_print_po'. ========= */
 
+
 /* This variable controls the extent to which the page width applies.
    True means it applies to message strings and file reference lines.
    False means it applies to file reference lines only.  */
@@ -564,12 +566,13 @@ message_print_style_filepos (enum filepos_comment_type type)
 {
   filepos_comment_type = type;
 }
-
+ 
 void
 message_page_combine_refs(void)
 {
   combine_refs = true;
 }
+
 
 /* --add-location argument handling.  Return an error indicator.  */
 bool

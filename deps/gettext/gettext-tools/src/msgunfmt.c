@@ -80,6 +80,7 @@ static int force_po;
 static const struct option long_options[] =
 {
   { "color", optional_argument, NULL, CHAR_MAX + 6 },
+  { "combine-refs", no_argument, NULL, CHAR_MAX + 8 },
   { "csharp", no_argument, NULL, CHAR_MAX + 4 },
   { "csharp-resources", no_argument, NULL, CHAR_MAX + 5 },
   { "escape", no_argument, NULL, 'E' },
@@ -101,7 +102,6 @@ static const struct option long_options[] =
   { "verbose", no_argument, NULL, 'v' },
   { "version", no_argument, NULL, 'V' },
   { "width", required_argument, NULL, 'w', },
-  { "combine-refs", no_argument, NULL, CHAR_MAX + 8 },
   { NULL, 0, NULL, 0 }
 };
 

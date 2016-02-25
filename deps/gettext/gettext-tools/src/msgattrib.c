@@ -88,6 +88,7 @@ static const struct option long_options[] =
   { "clear-previous", no_argument, NULL, CHAR_MAX + 18 },
   { "empty", no_argument, NULL, CHAR_MAX + 23 },
   { "color", optional_argument, NULL, CHAR_MAX + 19 },
+  { "combine-refs", no_argument, NULL, CHAR_MAX + 24 },
   { "directory", required_argument, NULL, 'D' },
   { "escape", no_argument, NULL, 'E' },
   { "force-po", no_argument, &force_po, 1 },
@@ -120,7 +121,6 @@ static const struct option long_options[] =
   { "untranslated", no_argument, NULL, CHAR_MAX + 2 },
   { "version", no_argument, NULL, 'V' },
   { "width", required_argument, NULL, 'w', },
-  { "combine-refs", no_argument, NULL, CHAR_MAX + 24 },
   { NULL, 0, NULL, 0 }
 };
 

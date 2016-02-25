@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: poedit\n"
 "Report-Msgid-Bugs-To: help@poedit.net\n"
-"POT-Creation-Date: 2015-10-20 13:51+0200\n"
-"PO-Revision-Date: 2015-10-20 07:51-0400\n"
+"POT-Creation-Date: 2016-02-02 18:06+0100\n"
+"PO-Revision-Date: 2016-02-02 04:19-0500\n"
 "Last-Translator: vslavik <vaclav@slavik.io>\n"
 "Language-Team: Slovenian\n"
 "Language: sl_SI\n"
@@ -125,12 +125,15 @@ msgid "Downloading translations is disabled in this project."
 msgstr ""
 
 msgid "Not authorized, please sign in again."
-msgstr ""
+msgstr "Niste pooblaščeni, ponovno se prijavite."
 
 msgid ""
 "Crowdin is an online localization management platform and collaborative "
 "translation tool. Poedit can seamlessly sync PO files managed at Crowdin."
 msgstr ""
+"Crowdin je spletna platforma za upravljanje lokalizacij in orodje za "
+"skupinsko prevajanje. Poedit lahko neopazno usklajuje datoteke PO, ki se "
+"upravljajo na Crowdin."
 
 msgid "Sign In"
 msgstr "Prijavi"
@@ -187,10 +190,10 @@ msgid "Downloading latest translations…"
 msgstr "Prenašanje najnovejših prevodov ..."
 
 msgid "Syncing with Crowdin"
-msgstr ""
+msgstr "Usklajevanje s Crowdin"
 
 msgid "Syncing with Crowdin failed."
-msgstr ""
+msgstr "Usklajevanje s Crowdin ni uspelo."
 
 msgid "Crowdin error"
 msgstr "Napaka Crowdin"
@@ -281,7 +284,7 @@ msgid "With accessibility enhancements by Freedom Scientific."
 msgstr ""
 
 msgid "Catalogs Manager"
-msgstr ""
+msgstr "Upravljalnik katalogov"
 
 msgid "Check for Updates..."
 msgstr "Preveri za posodobitve ..."
@@ -293,7 +296,7 @@ msgid "Undo"
 msgstr "Razveljavi"
 
 msgid "Redo"
-msgstr ""
+msgstr "Ponovi"
 
 msgid "Paste and Match Style"
 msgstr ""
@@ -371,7 +374,7 @@ msgid "Window"
 msgstr "Okno"
 
 msgid "Minimize"
-msgstr ""
+msgstr "Pomanjšaj"
 
 msgid "Zoom"
 msgstr "Povečava"
@@ -1393,6 +1396,12 @@ msgstr "&Upravljalnik katalogov"
 msgid "Catalogs &Manager"
 msgstr "&Upravljalnik katalogov"
 
+msgid "Copy from singular"
+msgstr ""
+
+msgid "Copy From Singular"
+msgstr ""
+
 msgid "Translation is &fuzzy"
 msgstr "Prevod je &ohlapen"
 
@@ -1502,7 +1511,7 @@ msgid "Update from &POT File..."
 msgstr "Posodobi s &POT datoteko ..."
 
 msgid "Sync with Crowdin"
-msgstr ""
+msgstr "Uskladi s Crowdin"
 
 msgid "Fill missing translations from &TM..."
 msgstr ""
@@ -1532,10 +1541,10 @@ msgid "&Done and Next"
 msgstr "&Končano in naprej"
 
 msgid "&Previous translation"
-msgstr ""
+msgstr "&Predhoden prevod"
 
 msgid "&Previous Translation"
-msgstr ""
+msgstr "&Predhoden prevod"
 
 msgid "&Next translation"
 msgstr "&Naslednji prevod"
@@ -1583,6 +1592,18 @@ msgid "Go to &comment"
 msgstr ""
 
 msgid "Go to &Comment"
+msgstr ""
+
+msgid "Previous plural form"
+msgstr ""
+
+msgid "Previous Plural Form"
+msgstr ""
+
+msgid "Next plural form"
+msgstr ""
+
+msgid "Next Plural Form"
 msgstr ""
 
 msgid "&Online help"
@@ -1667,7 +1688,7 @@ msgid "Use default rules for this language"
 msgstr ""
 
 msgid "Use custom expression"
-msgstr ""
+msgstr "Uporabi izraz po meri"
 
 msgid "Learn about plural forms"
 msgstr "Podrobnosti o množinskih oblikah"
@@ -1682,7 +1703,7 @@ msgid "Team's email address:"
 msgstr "Elektronski naslov skupine:"
 
 msgid "Translation properties"
-msgstr ""
+msgstr "Lastnosti prevoda"
 
 msgid "Sources paths"
 msgstr "Poti vira"
@@ -1754,7 +1775,7 @@ msgid "Toggled if selected string has fuzzy translation"
 msgstr "Preklop ohlapno prevedenega niza"
 
 msgid "Show or hide the sidebar"
-msgstr ""
+msgstr "Pokaži oz. skrij stransko vrstico"
 
 #. TRANSLATORS: "Previous" as in used in the past, now replaced with newer.
 msgid "Previous source text:"
@@ -1769,10 +1790,10 @@ msgid "Notes for translators:"
 msgstr "Opomba prevajalcem:"
 
 msgid "Add comment"
-msgstr ""
+msgstr "Dodaj komentar"
 
 msgid "Add Comment"
-msgstr ""
+msgstr "Dodaj komentar"
 
 msgid "Translation suggestions:"
 msgstr ""

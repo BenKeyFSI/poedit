@@ -115,6 +115,7 @@ static bool no_translator;
 static const struct option long_options[] =
 {
   { "color", optional_argument, NULL, CHAR_MAX + 5 },
+  { "combine-refs", no_argument, NULL, CHAR_MAX + 7 },
   { "help", no_argument, NULL, 'h' },
   { "input", required_argument, NULL, 'i' },
   { "locale", required_argument, NULL, 'l' },
@@ -128,7 +129,6 @@ static const struct option long_options[] =
   { "style", required_argument, NULL, CHAR_MAX + 6 },
   { "version", no_argument, NULL, 'V' },
   { "width", required_argument, NULL, 'w' },
-  { "combine-refs", no_argument, NULL, CHAR_MAX + 7 },
   { NULL, 0, NULL, 0 }
 };
 

@@ -445,6 +445,7 @@ po_parse_comment_special (const char *s,
     }
 }
 
+
 /* Helper function that is used by po_parse_comment_filepos to find the end of the file name.
 Allows for spaces in file names. */
 static const char* po_parse_comment_find_end_of_file_name(const char* s)
