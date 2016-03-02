@@ -622,9 +622,6 @@
     <ClCompile Include="..\wx\src\msw\msgdlg.cpp">
       <Filter>MSW Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\wx\src\msw\mslu.cpp">
-      <Filter>MSW Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\wx\src\msw\nativdlg.cpp">
       <Filter>MSW Sources</Filter>
     </ClCompile>
@@ -885,6 +882,21 @@
     </ClCompile>
     <ClCompile Include="..\wx\src\xrc\xmlreshandler.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\msw\systhemectrl.cpp">
+      <Filter>MSW Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\msw\rt\utilsrt.cpp">
+      <Filter>MSW Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\msw\appprogress.cpp">
+      <Filter>MSW Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\msw\taskbarbutton.cpp">
+      <Filter>MSW Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\generic\collheaderctrlg.cpp">
+      <Filter>Generic Sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -2502,6 +2514,21 @@
       <Filter>Common Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\wx\include\wx\xpmhand.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wx\include\wx\systhemectrl.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wx\include\wx\appprogress.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wx\include\wx\msw\appprogress.h">
+      <Filter>MSW Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wx\include\wx\msw\taskbarbutton.h">
+      <Filter>MSW Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wx\include\wx\taskbarbutton.h">
       <Filter>Common Headers</Filter>
     </ClInclude>
   </ItemGroup>

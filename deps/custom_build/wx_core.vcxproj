@@ -43,12 +43,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>..\wx\lib\vc_lib\</OutDir>
     <IntDir>vc_mswud\core\</IntDir>
-    <TargetName>wxmsw30ud_core</TargetName>
+    <TargetName>wxmsw31ud_core</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>..\wx\lib\vc_lib\</OutDir>
     <IntDir>vc_mswu\core\</IntDir>
-    <TargetName>wxmsw30u_core</TargetName>
+    <TargetName>wxmsw31u_core</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
@@ -69,7 +69,7 @@
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>vc_mswud\wxprec_corelib.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>vc_mswud\core\</ObjectFileName>
-      <ProgramDataBaseFileName>..\wx\lib\vc_lib\wxmsw30ud_core.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>..\wx\lib\vc_lib\wxmsw31ud_core.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -81,7 +81,7 @@
       <AdditionalIncludeDirectories>config;..\wx\include;..\wx\src\tiff\libtiff;..\wx\src\jpeg;..\wx\src\png;..\zlib;..\wx\src\regex;..\expat\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Lib>
-      <OutputFile>..\wx\lib\vc_lib\wxmsw30ud_core.lib</OutputFile>
+      <OutputFile>..\wx\lib\vc_lib\wxmsw31ud_core.lib</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
     <Bscmake>
@@ -106,7 +106,7 @@
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>vc_mswu\wxprec_corelib.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>vc_mswu\core\</ObjectFileName>
-      <ProgramDataBaseFileName>..\wx\lib\vc_lib\wxmsw30u_core.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>..\wx\lib\vc_lib\wxmsw31u_core.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -118,7 +118,7 @@
       <AdditionalIncludeDirectories>config;..\wx\include;..\wx\src\tiff\libtiff;..\wx\src\jpeg;..\wx\src\png;..\zlib;..\wx\src\regex;..\expat\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Lib>
-      <OutputFile>..\wx\lib\vc_lib\wxmsw30u_core.lib</OutputFile>
+      <OutputFile>..\wx\lib\vc_lib\wxmsw31u_core.lib</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
     <Bscmake>
@@ -262,7 +262,9 @@
     <ClCompile Include="..\wx\src\common\windowid.cpp" />
     <ClCompile Include="..\wx\src\common\wrapsizer.cpp" />
     <ClCompile Include="..\wx\src\common\xpmdecod.cpp" />
+    <ClCompile Include="..\wx\src\generic\collheaderctrlg.cpp" />
     <ClCompile Include="..\wx\src\msw\accel.cpp" />
+    <ClCompile Include="..\wx\src\msw\appprogress.cpp" />
     <ClCompile Include="..\wx\src\msw\ole\access.cpp" />
     <ClCompile Include="..\wx\src\msw\ole\activex.cpp" />
     <ClCompile Include="..\wx\src\msw\anybutton.cpp" />
@@ -328,7 +330,6 @@
     <ClCompile Include="..\wx\src\msw\metafile.cpp" />
     <ClCompile Include="..\wx\src\msw\minifram.cpp" />
     <ClCompile Include="..\wx\src\msw\msgdlg.cpp" />
-    <ClCompile Include="..\wx\src\msw\mslu.cpp" />
     <ClCompile Include="..\wx\src\msw\nativdlg.cpp" />
     <ClCompile Include="..\wx\src\msw\nativewin.cpp" />
     <ClCompile Include="..\wx\src\msw\nonownedwnd.cpp" />
@@ -348,6 +349,7 @@
     <ClCompile Include="..\wx\src\msw\renderer.cpp" />
     <ClCompile Include="..\wx\src\msw\richmsgdlg.cpp" />
     <ClCompile Include="..\wx\src\msw\ole\safearray.cpp" />
+    <ClCompile Include="..\wx\src\msw\rt\utilsrt.cpp" />
     <ClCompile Include="..\wx\src\msw\scrolbar.cpp" />
     <ClCompile Include="..\wx\src\msw\settings.cpp" />
     <ClCompile Include="..\wx\src\msw\slider.cpp" />
@@ -358,6 +360,8 @@
     <ClCompile Include="..\wx\src\msw\statline.cpp" />
     <ClCompile Include="..\wx\src\msw\stattext.cpp" />
     <ClCompile Include="..\wx\src\msw\statusbar.cpp" />
+    <ClCompile Include="..\wx\src\msw\systhemectrl.cpp" />
+    <ClCompile Include="..\wx\src\msw\taskbarbutton.cpp" />
     <ClCompile Include="..\wx\src\msw\textctrl.cpp" />
     <ClCompile Include="..\wx\src\msw\textentry.cpp" />
     <ClCompile Include="..\wx\src\msw\textmeasure.cpp" />
@@ -424,7 +428,9 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\wx\include\wx\appprogress.h" />
     <ClInclude Include="..\wx\include\wx\msw\accel.h" />
+    <ClInclude Include="..\wx\include\wx\msw\appprogress.h" />
     <ClInclude Include="..\wx\include\wx\msw\ole\access.h" />
     <ClInclude Include="..\wx\include\wx\msw\ole\activex.h" />
     <ClInclude Include="..\wx\include\wx\msw\anybutton.h" />
@@ -536,6 +542,7 @@
     <ClInclude Include="..\wx\include\wx\msw\stattext.h" />
     <ClInclude Include="..\wx\include\wx\msw\statusbar.h" />
     <ClInclude Include="..\wx\include\wx\msw\taskbar.h" />
+    <ClInclude Include="..\wx\include\wx\msw\taskbarbutton.h" />
     <ClInclude Include="..\wx\include\wx\msw\textctrl.h" />
     <ClInclude Include="..\wx\include\wx\msw\textentry.h" />
     <ClInclude Include="..\wx\include\wx\msw\tglbtn.h" />
@@ -859,7 +866,9 @@
     <ClInclude Include="..\wx\include\wx\stc\stc.h" />
     <ClInclude Include="..\wx\include\wx\aui\tabart.h" />
     <ClInclude Include="..\wx\include\wx\aui\tabmdi.h" />
+    <ClInclude Include="..\wx\include\wx\systhemectrl.h" />
     <ClInclude Include="..\wx\include\wx\taskbar.h" />
+    <ClInclude Include="..\wx\include\wx\taskbarbutton.h" />
     <ClInclude Include="..\wx\include\wx\tbarbase.h" />
     <ClInclude Include="..\wx\include\wx\textcompleter.h" />
     <ClInclude Include="..\wx\include\wx\textctrl.h" />

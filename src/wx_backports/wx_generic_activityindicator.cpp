@@ -50,8 +50,6 @@ static const int NUM_DOTS = 8;
 // Delay between the consecutive updates in milliseconds.
 static const int FRAME_DELAY = 150;
 
-inline double wxDegToRad(double deg) { return (deg * M_PI) / 180.0; }
-
 } // anonymous namespace
 
 // ----------------------------------------------------------------------------

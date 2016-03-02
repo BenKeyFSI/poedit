@@ -83,6 +83,9 @@ class AutoWrappingTextCtrl : public wxTextCtrl
 {
 public:
     AutoWrappingTextCtrl(wxWindow* parent, wxWindowID id, const wxString& value);
+    
+    void SetLanguage(Language lang) { m_language = lang; }
+
     void SetAlignment(int align);
     void SetAndWrapText(const wxString& value);
 
@@ -91,6 +94,7 @@ protected:
 
     wxString m_value;
     int m_wrapWidth;
+    Language m_language;
 };
 
 /** 

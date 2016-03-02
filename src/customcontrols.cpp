@@ -222,7 +222,7 @@ void AutoWrappingTextCtrl::SetAndWrapText(const wxString& value)
     wxWindowUpdateLocker lock(this);
     m_value = value;
     m_wrapWidth = GetSize().x;
-    SetValue(WrapTextAtWidth(value, m_wrapWidth, this));
+    SetValue(WrapTextAtWidth(value, m_wrapWidth, m_language, this));
     InvalidateBestSize();
     SetMinSize(wxDefaultSize);
     SetMinSize(GetBestSize());
@@ -236,7 +236,7 @@ void AutoWrappingTextCtrl::OnSize(wxSizeEvent& e)
         return;
     wxWindowUpdateLocker lock(this);
     m_wrapWidth = w;
-    SetValue(WrapTextAtWidth(m_value, w, this));
+    SetValue(WrapTextAtWidth(m_value, w, m_language, this));
     InvalidateBestSize();
     SetMinSize(wxDefaultSize);
     SetMinSize(GetBestSize());

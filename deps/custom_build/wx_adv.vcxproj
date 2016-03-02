@@ -43,12 +43,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>..\wx\lib\vc_lib\</OutDir>
     <IntDir>vc_mswud\adv\</IntDir>
-    <TargetName>wxmsw30ud_adv</TargetName>
+    <TargetName>wxmsw31ud_adv</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>..\wx\lib\vc_lib\</OutDir>
     <IntDir>vc_mswu\adv\</IntDir>
-    <TargetName>wxmsw30u_adv</TargetName>
+    <TargetName>wxmsw31u_adv</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
@@ -69,7 +69,7 @@
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>vc_mswud\wxprec_advlib.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>vc_mswud\adv\</ObjectFileName>
-      <ProgramDataBaseFileName>..\wx\lib\vc_lib\wxmsw30ud_adv.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>..\wx\lib\vc_lib\wxmsw31ud_adv.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -81,7 +81,7 @@
       <AdditionalIncludeDirectories>config;..\wx\include;..\wx\src\tiff\libtiff;..\wx\src\jpeg;..\wx\src\png;..\zlib;..\wx\src\regex;..\expat\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Lib>
-      <OutputFile>..\wx\lib\vc_lib\wxmsw30ud_adv.lib</OutputFile>
+      <OutputFile>..\wx\lib\vc_lib\wxmsw31ud_adv.lib</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
     <Bscmake>
@@ -106,7 +106,7 @@
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>vc_mswu\wxprec_advlib.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>vc_mswu\adv\</ObjectFileName>
-      <ProgramDataBaseFileName>..\wx\lib\vc_lib\wxmsw30u_adv.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>..\wx\lib\vc_lib\wxmsw31u_adv.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -118,7 +118,7 @@
       <AdditionalIncludeDirectories>config;..\wx\include;..\wx\src\tiff\libtiff;..\wx\src\jpeg;..\wx\src\png;..\zlib;..\wx\src\regex;..\expat\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Lib>
-      <OutputFile>..\wx\lib\vc_lib\wxmsw30u_adv.lib</OutputFile>
+      <OutputFile>..\wx\lib\vc_lib\wxmsw31u_adv.lib</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
     <Bscmake>
@@ -137,6 +137,7 @@
     </ClCompile>
     <ClCompile Include="..\wx\src\common\gridcmn.cpp" />
     <ClCompile Include="..\wx\src\common\hyperlnkcmn.cpp" />
+    <ClCompile Include="..\wx\src\common\notifmsgcmn.cpp" />
     <ClCompile Include="..\wx\src\common\odcombocmn.cpp" />
     <ClCompile Include="..\wx\src\common\richtooltipcmn.cpp" />
     <ClCompile Include="..\wx\src\common\taskbarcmn.cpp" />
@@ -151,6 +152,7 @@
     <ClCompile Include="..\wx\src\msw\joystick.cpp" />
     <ClCompile Include="..\wx\src\msw\notifmsg.cpp" />
     <ClCompile Include="..\wx\src\msw\richtooltip.cpp" />
+    <ClCompile Include="..\wx\src\msw\rt\notifmsgrt.cpp" />
     <ClCompile Include="..\wx\src\msw\sound.cpp" />
     <ClCompile Include="..\wx\src\msw\taskbar.cpp" />
     <ClCompile Include="..\wx\src\msw\timectrl.cpp" />

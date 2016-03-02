@@ -11,48 +11,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\wx\src\stc\scintilla\lexlib\Accessor.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\src\AutoComplete.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\src\CallTip.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\src\Catalogue.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\src\CellBuffer.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\src\CharClassify.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\lexlib\CharacterSet.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\src\ContractionState.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\src\Decoration.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\src\Document.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\src\Editor.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\src\ExternalLexer.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\src\Indicator.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\src\KeyMap.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexA68k.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -92,6 +50,9 @@
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexBasic.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexBibTeX.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexBullant.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -128,6 +89,12 @@
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexD.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexDMAP.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexDMIS.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexECL.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -161,10 +128,19 @@
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexHaskell.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexHex.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexInno.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexKVIrc.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexKix.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexLaTeX.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexLisp.cxx">
@@ -224,6 +200,9 @@
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexPLM.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexPO.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexPOV.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -254,13 +233,22 @@
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexRebol.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexRegistry.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexRuby.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexRust.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexSML.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexSQL.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexSTTXT.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexScriptol.cxx">
@@ -314,6 +302,12 @@
     <ClCompile Include="..\wx\src\stc\scintilla\lexers\LexYAML.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\lexlib\Accessor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\lexlib\CharacterSet.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\lexlib\LexerBase.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -326,16 +320,73 @@
     <ClCompile Include="..\wx\src\stc\scintilla\lexlib\LexerSimple.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\lexlib\PropSetSimple.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\lexlib\StyleContext.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\lexlib\WordList.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\AutoComplete.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\CallTip.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\CaseConvert.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\CaseFolder.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\Catalogue.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\CellBuffer.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\CharClassify.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\ContractionState.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\Decoration.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\Document.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\EditModel.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\EditView.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\Editor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\ExternalLexer.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\Indicator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\KeyMap.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\src\LineMarker.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wx\src\stc\scintilla\src\MarginView.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\src\PerLine.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\src\PositionCache.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\lexlib\PropSetSimple.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\src\RESearch.cxx">
@@ -353,19 +404,16 @@
     <ClCompile Include="..\wx\src\stc\scintilla\src\Style.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\lexlib\StyleContext.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\src\UniConversion.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\wx\src\stc\scintilla\src\ViewStyle.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\lexlib\WordList.cxx">
+    <ClCompile Include="..\wx\src\stc\scintilla\src\XPM.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\wx\src\stc\scintilla\src\XPM.cxx">
+    <ClCompile Include="..\wx\src\stc\scintilla\lexlib\CharacterCategory.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
