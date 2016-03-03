@@ -141,6 +141,7 @@
     <ClCompile Include="..\wx\src\common\odcombocmn.cpp" />
     <ClCompile Include="..\wx\src\common\richtooltipcmn.cpp" />
     <ClCompile Include="..\wx\src\common\taskbarcmn.cpp" />
+    <ClCompile Include="..\wx\src\generic\activityindicator.cpp" />
     <ClCompile Include="..\wx\src\msw\aboutdlg.cpp" />
     <ClCompile Include="..\wx\src\msw\bmpcbox.cpp" />
     <ClCompile Include="..\wx\src\msw\calctrl.cpp" />
@@ -190,6 +191,8 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\wx\include\wx\activityindicator.h" />
+    <ClInclude Include="..\wx\include\wx\generic\activityindicator.h" />
     <ClInclude Include="..\wx\include\wx\msw\bmpcbox.h" />
     <ClInclude Include="..\wx\include\wx\msw\calctrl.h" />
     <ClInclude Include="..\wx\include\wx\msw\commandlinkbutton.h" />

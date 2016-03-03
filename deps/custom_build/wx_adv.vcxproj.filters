@@ -177,6 +177,9 @@
     <ClCompile Include="..\wx\src\common\notifmsgcmn.cpp">
       <Filter>Common Sources</Filter>
     </ClCompile>
+    <ClCompile Include="..\wx\src\generic\activityindicator.cpp">
+      <Filter>Generic Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\wx\src\msw\version.rc">
@@ -365,6 +368,12 @@
       <Filter>Common Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\wx\include\wx\wizard.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wx\include\wx\generic\activityindicator.h">
+      <Filter>Generic Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wx\include\wx\activityindicator.h">
       <Filter>Common Headers</Filter>
     </ClInclude>
   </ItemGroup>
