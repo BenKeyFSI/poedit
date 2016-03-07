@@ -59,6 +59,8 @@ class PoeditApp : public wxApp
         wxString GetAppBuildNumber() const;
         bool IsBetaVersion() const;
         bool CheckForBetaUpdates() const;
+        bool IsFSVersion() const;
+        bool EnableCheckForUpdates() const;
 
         // opens files in new frame
         void OpenFiles(const wxArrayString& filenames);

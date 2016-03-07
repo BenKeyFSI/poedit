@@ -44,6 +44,7 @@
 #include <wx/intl.h>
 #include <wx/ipc.h>
 #include <wx/translation.h>
+#include <wx/filefn.h>
 
 #ifdef __WXOSX__
 #include "osx_helpers.h"
@@ -307,6 +308,39 @@ bool PoeditApp::CheckForBetaUpdates() const
            wxConfigBase::Get()->ReadBool("check_for_beta_updates", false);
 }
 
+bool PoeditApp::IsFSVersion() const
+{
+    wxString v = GetAppVersion();
+    return  v.Contains("FS") || v.Contains("fs");
+}
+
+bool PoeditApp::EnableCheckForUpdates() const
+{
+    if (!IsFSVersion())
+    {
+        return true;
+    }
+#if defined(__WXMSW__)
+    /* Freedom Scientific has requested that the check for updates be disabled for the build that is
+       part of the localization kit. */
+    auto exe = wxStandardPaths::Get().GetExecutablePath();
+	wxString t;
+	wxFileName::SplitPath(exe, &t, nullptr, nullptr);
+	auto fn = wxFileName::DirName(t);
+	if (fn.GetDirCount() > 2)
+	{
+		fn.RemoveLastDir();
+		fn.RemoveLastDir();
+		t = fn.GetFullPath();
+		wxFileName buildLockit(t, "BuildLockit.exe");
+		if (buildLockit.Exists())
+		{
+			return false;
+		}
+	}
+#endif
+    return true;
+}
 
 static wxArrayString gs_filesToOpen;
 
@@ -480,28 +514,31 @@ bool PoeditApp::OnInit()
     }
 #endif // !__WXOSX__
 
+    if (EnableCheckForUpdates())
+    {
 #ifdef USE_SPARKLE
-    Sparkle_Initialize(CheckForBetaUpdates());
+        Sparkle_Initialize(CheckForBetaUpdates());
 #endif // USE_SPARKLE
 
 #ifdef __WXMSW__
-    wxString appcast = "https://poedit.net/updates/win/appcast";
-    if ( CheckForBetaUpdates() )
-    {
-        // Beta versions use unstable feed.
-        appcast = "https://poedit.net/updates/win/appcast/beta";
-    }
-    if (!wxPlatformInfo().CheckOSVersion(6,0)) // XP doesn't support SNI
-        appcast.Replace("https://", "http://");
+        wxString appcast = "https://poedit.net/updates/win/appcast";
+        if ( CheckForBetaUpdates() )
+        {
+            // Beta versions use unstable feed.
+            appcast = "https://poedit.net/updates/win/appcast/beta";
+        }
+        if (!wxPlatformInfo().CheckOSVersion(6,0)) // XP doesn't support SNI
+            appcast.Replace("https://", "http://");
 
-    win_sparkle_set_appcast_url(appcast.utf8_str());
-    win_sparkle_set_can_shutdown_callback(&PoeditApp::WinSparkle_CanShutdown);
-    win_sparkle_set_shutdown_request_callback(&PoeditApp::WinSparkle_Shutdown);
-    auto buildnum = GetAppBuildNumber();
-    if (!buildnum.empty())
-        win_sparkle_set_app_build_version(buildnum.wc_str());
-    win_sparkle_init();
+        win_sparkle_set_appcast_url(appcast.utf8_str());
+        win_sparkle_set_can_shutdown_callback(&PoeditApp::WinSparkle_CanShutdown);
+        win_sparkle_set_shutdown_request_callback(&PoeditApp::WinSparkle_Shutdown);
+        auto buildnum = GetAppBuildNumber();
+        if (!buildnum.empty())
+            win_sparkle_set_app_build_version(buildnum.wc_str());
+        win_sparkle_init();
 #endif
+    }
 
 #ifndef __WXOSX__
     // If we failed to open any window during startup (e.g. because the user
