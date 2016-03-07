@@ -278,7 +278,6 @@
     </CustomBuild>
     <ClInclude Include="..\wx\include\wx\msw\libraries.h" />
     <ClInclude Include="..\wx\include\wx\msw\mimetype.h" />
-    <ClInclude Include="..\wx\include\wx\msw\mslu.h" />
     <ClInclude Include="..\wx\include\wx\msw\private.h" />
     <ClInclude Include="..\wx\include\wx\msw\regconf.h" />
     <ClInclude Include="..\wx\include\wx\msw\registry.h" />

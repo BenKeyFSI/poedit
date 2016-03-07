@@ -515,7 +515,6 @@
     <ClInclude Include="..\wx\include\wx\msw\msvcrt.h" />
     <ClInclude Include="..\wx\include\wx\msw\nonownedwnd.h" />
     <ClInclude Include="..\wx\include\wx\msw\notebook.h" />
-    <ClInclude Include="..\wx\include\wx\msw\notifmsg.h" />
     <ClInclude Include="..\wx\include\wx\msw\ole\oleutils.h" />
     <ClInclude Include="..\wx\include\wx\msw\ownerdrw.h" />
     <ClInclude Include="..\wx\include\wx\msw\palette.h" />

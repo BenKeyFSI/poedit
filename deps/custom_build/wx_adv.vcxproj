@@ -210,7 +210,6 @@
     </CustomBuild>
     <ClInclude Include="..\wx\include\wx\msw\hyperlink.h" />
     <ClInclude Include="..\wx\include\wx\msw\joystick.h" />
-    <ClInclude Include="..\wx\include\wx\msw\notifmsg.h" />
     <ClInclude Include="..\wx\include\wx\msw\sound.h" />
     <ClInclude Include="..\wx\include\wx\msw\taskbar.h" />
     <ClInclude Include="..\wx\include\wx\msw\timectrl.h" />

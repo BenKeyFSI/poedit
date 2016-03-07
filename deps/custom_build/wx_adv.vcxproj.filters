@@ -208,9 +208,6 @@
     <ClInclude Include="..\wx\include\wx\msw\joystick.h">
       <Filter>MSW Headers</Filter>
     </ClInclude>
-    <ClInclude Include="..\wx\include\wx\msw\notifmsg.h">
-      <Filter>MSW Headers</Filter>
-    </ClInclude>
     <ClInclude Include="..\wx\include\wx\msw\sound.h">
       <Filter>MSW Headers</Filter>
     </ClInclude>

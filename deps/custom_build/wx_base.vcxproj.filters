@@ -406,9 +406,6 @@
     <ClInclude Include="..\wx\include\wx\msw\mimetype.h">
       <Filter>MSW Headers</Filter>
     </ClInclude>
-    <ClInclude Include="..\wx\include\wx\msw\mslu.h">
-      <Filter>MSW Headers</Filter>
-    </ClInclude>
     <ClInclude Include="..\wx\include\wx\msw\private.h">
       <Filter>MSW Headers</Filter>
     </ClInclude>

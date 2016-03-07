@@ -1130,9 +1130,6 @@
     <ClInclude Include="..\wx\include\wx\msw\notebook.h">
       <Filter>MSW Headers</Filter>
     </ClInclude>
-    <ClInclude Include="..\wx\include\wx\msw\notifmsg.h">
-      <Filter>MSW Headers</Filter>
-    </ClInclude>
     <ClInclude Include="..\wx\include\wx\msw\ole\oleutils.h">
       <Filter>MSW Headers</Filter>
     </ClInclude>
